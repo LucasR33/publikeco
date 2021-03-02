@@ -1,35 +1,40 @@
 const express = require('express');
-const mongoose = require('mongoose');
-
 const app = express();
 
-app.set('view engine', 'ejs');
+// //connexion to the hbase database on local env
+// const hbase = require('hbase')
+// const client = hbase({
+//   host: '127.0.0.1',
+//   port: 8080
+// })
 
+app.use('/public', express.static('public'));
+app.set('views', './views');
+app.set('view engine', 'ejs');
 app.use(express.urlencoded({ extended: false }));
 
-// Connect to MongoDB
-mongoose
-  .connect(
-    'mongodb://mongo:27017/docker-node-mongo',
-    { useNewUrlParser: true }
-  )
-  .then(() => console.log('MongoDB Connected'))
-  .catch(err => console.log(err));
-
-const Item = require('./models/Item');
-
-app.get('/', (req, res) => {
-  Item.find()
-    .then(items => res.render('index', { items }))
-    .catch(err => res.status(404).json({ msg: 'No items found' }));
+app.get('/gestion', (req, res) => {
+  res.render('gestion')
 });
 
-app.post('/item/add', (req, res) => {
-  const newItem = new Item({
-    name: req.body.name
-  });
+app.get('/encheres', (req, res) => {
+  res.render('encheres')
+});
 
-  newItem.save().then(item => res.redirect('/'));
+app.get('/pubs', (req, res) => {
+  res.render('pubs')
+});
+
+app.get('/jeux', (req, res) => {
+  res.render('jeux')
+});
+
+app.get('/jouer', (req, res) => {
+  res.render('jouer')
+});
+
+app.get('/', (req, res) => {
+  res.render('index')
 });
 
 const port = 3000;
