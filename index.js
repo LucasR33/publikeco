@@ -37,6 +37,6 @@ app.get('/', (req, res) => {
   res.render('index')
 });
 
-const port = 3000;
 
+const port = 3000;
 app.listen(port, () => console.log('Server running...'));

@@ -1,0 +1,75 @@
+<% include ./partials/template %>
+  <body>
+      <% include ./partials/header %>
+      <% include ./partials/nav %>
+    <main role="main">
+        <section class="panel important">
+            <h2>Ajouter une annonce</h2>
+            <ul>
+              <li>
+                <form action="">
+                  <!--  General -->
+                  <div class="form-group">
+                    <div class="controls">
+                      <label for="name">Nom</label>
+                      <input type="text" id="name" class="floatLabel" name="name">
+                    </div>
+                    <div class="controls">
+                      <label for="comments">Caractéristiques</label>
+                      <textarea name="comments" class="floatLabel" id="comments"></textarea>
+                      </div>
+                    <div class="controls">
+                      <label for="email">Média</label>
+                      <input type="file" name="file" >
+                    </div>
+                    <div class="controls">
+                      <label for="name">Prix</label>
+                      <input type="text" id="name" class="floatLabel" name="name">
+                    </div>
+                  </div>
+                  <!--  Details --><br><br>
+                  <div class="form-group">
+                    <h2 class="heading">Cible</h2>
+        
+                      <div class="grid">
+                    <div class="col-1-3 col-1-3-sm">
+                      <div class="controls">
+                        <label for="fruit">Pays</label>
+                        <select class="floatLabel">
+                          <option value="blank"></option>
+                          <option value="Allemagne">Allemagne</option>
+                          <option value="France" selected>France</option>
+                          <option value="Espagne">Espagne</option>
+                        </select>
+        
+                      </div>
+                    </div>
+                    <div class="controls">
+                      <label for="name">Age min</label>
+                      <input type="text" id="name" class="floatLabel" name="name">
+                    </div>
+                    <div class="controls">
+                      <label for="name">Age Max</label>
+                      <input type="text" id="name" class="floatLabel" name="name">
+                    </div>
+                    <div class="controls">
+                      <label for="name">Plateforme</label>
+                      <input type="text" id="name" class="floatLabel" name="name">
+                    </div>
+                    <div class="controls">
+                      <label for="name">Tags</label>
+                      <input type="text" id="name" class="floatLabel" name="name">
+                    </div>
+        
+                     </div>
+                  </div> <!-- /.form-group -->
+                  <div>
+                    <input type="submit" name="submit" value="Save" />
+                  </div>
+                </form>
+              </li>
+            </ul>
+          </section>
+    </main>
+  </body>
+</html>
