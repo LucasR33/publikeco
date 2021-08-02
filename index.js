@@ -1,8 +1,14 @@
 const express = require('express');
-const app = express();
 const mongoose = require('mongoose');
+const fs = require('fs');
+// const multer = require('multer');
 const bodyParser = require('body-parser');
+const path = require('path');
 
+const app = express();
+
+app.use(bodyParser.json())
+app.use(express.urlencoded({ extended: false }));
 
 app.use('/public', express.static('public'));
 app.set('views', './views');
@@ -34,23 +40,25 @@ app.get('/encheres', (req, res) => {
   res.render('encheres')
 });
 
-app.get('/jeux', (req, res) => {
+app.get('/pubs', (req, res) => {
   res.render('pubs')
 });
 
-app.get('/annonces/add', (req, res) => {
+app.post('/annonce/add', (req, res) => {
   const newAnnonce = new Annonce({
-    libelle: "I origins",
-    id_annonceur: "2014",
-    media: {
-        data: fs.readFileSync('./images/affiches/iorigins.jpg'),
-        contentType: 'image/jpg'
-    },
-    description: "",
-    cible: "",
-    prix_max: 10
+    id_annonce: 2,
+    libelle: req.body.libelle,
+    id_annonceur: 1,
+    // media: {
+    //     data: fs.readFileSync('./images/affiches/iorigins.jpg'),
+    //     contentType: 'image/jpg'
+    // },
+    description: req.body.description,
+    cible: [req.body.sexe, req.body.agemin, req.body.agemax, req.body.pays],
+    prix_max: req.body.prix_max
   });
-  newAnnonce.save().then(annonce => res.redirect('/'));
+  console.log(req.body.libelle);
+  newAnnonce.save().then(annonce => res.redirect('/pubs'));
 });
 
 app.get('/jeux', (req, res) => {
