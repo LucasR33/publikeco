@@ -3,8 +3,7 @@ const Schema = mongoose.Schema;
 
 const AnnonceSchema = new Schema({
   id_annonce: {
-    type: Number,
-    required: true
+    type: Number
   },
   libelle: {
     type: String,
@@ -12,8 +11,7 @@ const AnnonceSchema = new Schema({
   },
   id_annonceur: {
     type: Number,
-    contentType: String,
-    required: true
+    contentType: String
   },
   media: {
     data: Buffer,
