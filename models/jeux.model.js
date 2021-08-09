@@ -14,11 +14,11 @@ const JeuxSchema = new Schema({
     contentType: String
   },
   id_editeur: {
-    data: Buffer,
+    data: Number,
     contentType: String
   },
   emplacements_annonces: {
-    type: Array,
+    type: Number,
     required: true
   }
 });

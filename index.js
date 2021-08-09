@@ -33,7 +33,13 @@ app.get('/', (req, res) => {
 
 
 require('./routes/annonce.routes.js')(app);
-
+//require('./routes/click.routes.js')(app);
+//require('./routes/compte.routes.js')(app);
+//require('./routes/emplacement.routes.js')(app);
+require('./routes/enchere.routes.js')(app);
+require('./routes/jeux.routes.js')(app);
+require('./routes/joueur.routes.js')(app);
+//require('./routes/tag.routes.js')(app);
 
 app.get('/gestion', (req, res) => {
   res.render('gestion')
