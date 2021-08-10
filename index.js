@@ -49,9 +49,9 @@ app.get('/encheres', (req, res) => {
   res.render('encheres')
 });
 
-app.get('/pubs', (req, res) => {
-  res.render('pubs')
-});
+//app.get('/annonce', (req, res) => {
+//  res.render('annonce')
+//});
 
 
 app.get('/jeux', (req, res) => {

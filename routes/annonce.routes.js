@@ -2,9 +2,9 @@ module.exports = (app) => {
     const annonce = require('../controllers/annonce.controller.js');
 
     
-    app.post('/annonce', annonce.create);
+    app.post('/annonces', annonce.create);
 
-    //app.get('/annonce', annonce.all);
+    app.get('/annonce', annonce.findAll);
 
     //app.get('/annonce/:annoId', annonce.findOne)
 

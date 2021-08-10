@@ -11,10 +11,11 @@ exports.create = (req, res) => {
         // },
         description: req.body.description,
         cible: [req.body.sexe, req.body.agemin, req.body.agemax, req.body.pays],
-        prix_max: req.body.prix_max
+        prix_max: req.body.prix_max,
+        valide: false
       });
       console.log(req.body.libelle);
-      newAnnonce.save().then(data => res.redirect('/pubs'));
+      newAnnonce.save().then(data => res.redirect('/annonce'));
 };
 
 exports.findAll = (req, res) => {
@@ -49,6 +50,8 @@ exports.update = (req, res) => {
 exports.delete = (req, res) => {
     annonce.findByIdAndRemove(req.params.id_annonce)
     .then(anno => {
-        res.redirect('/pubs');
+        res.redirect('/annonce');
     });
 };
+
+//TO-DO Faire la requete de validation du jeu

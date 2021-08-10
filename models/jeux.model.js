@@ -2,8 +2,8 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const JeuxSchema = new Schema({
-  id_annonce: {
-    type: Number
+  id_jeu: {
+    type: Number,
   },
   nom_jeu: {
     type: String,
@@ -19,6 +19,10 @@ const JeuxSchema = new Schema({
   },
   emplacements_annonces: {
     type: Number,
+    required: true
+  },
+  valide: {
+    type: Boolean, 
     required: true
   }
 });

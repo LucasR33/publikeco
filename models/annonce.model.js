@@ -29,6 +29,10 @@ const AnnonceSchema = new Schema({
     type: Number,
     required: true
   },
+  valide: {
+    type: Boolean,
+    required: true
+  }
 });
 
 module.exports = Annonce = mongoose.model('annonce', AnnonceSchema);

@@ -1,0 +1,148 @@
+{
+	"jeux" : [
+		{
+			"id_jeu":1,
+			"nom_jeu":"Paul of Duty - Beauty Edition",
+			"id_tags" : [1],
+			"id_editeur":1,
+			"emplacements_annonces" : [
+				1
+			]
+		}
+	],
+	"comptes":[
+			{
+				"id_compte":1,
+				"nom":"Pierre",
+				"prenom":"Jean-Paul",
+				"mdp":"dzeuyvgruzagvuzeae",
+				"email":"jean-paul.pierre@electrotech.fr",
+				"annonces" : [1],
+				"jeux": [1],
+				"type": ""
+			},
+			{
+				"id_compte_admin":1,
+				"nom":"Farsi",
+				"prenom":"Ahmed",
+				"mdp":"lkhglidsfhntzelve",
+				"email":"ahmed.farsi@viacesi.fr",
+				"annonces" : [1],
+				"jeux": [1],
+				"type": ""
+			},
+			{
+				"id_compte_admin":2,
+				"nom":"Roux",
+				"prenom":"Lucas",
+				"mdp":"gikhufvnegfbevkl",
+				"email":"lucas.roux@viacesi.fr",
+				"annonces" : [1],
+				"jeux": [1],
+				"type": ""
+			},
+			{
+				"id_compte_admin":3,
+				"nom":"Laforest",
+				"prenom":"Etienne",
+				"mdp":"guysbitkngtuiabbngzeyu",
+				"email":"etienne.laforest@viacesi.fr",
+				"annonces" : [1],
+				"jeux": [1],
+				"type": ""
+			},
+			{
+				"id_compte_admin":4,
+				"nom":"Perrin",
+				"prenom":"Julien",
+				"mdp":"jihgvefhgniezft",
+				"email":"julien.perrin@viacesi.fr",
+				"annonces" : [1],
+				"jeux": [1],
+				"type": ""
+			}
+		],
+	"encheres" : [
+		{
+			"id_enchère":1,
+			"id_editeur":1,
+			"id_annonceurs":[1],
+			"id_annonceur_vainqueur":1,
+			"prix_vainqueur":0.04,
+			"id_emplacement_annonce":1
+		}
+	],
+	"annonces" : [
+		{
+			"id_annonce":1,
+			"libellé":"Razorblade 2000",
+			"id_annonceur":1,
+			"media":{
+				"encodage":"rejgherergre65g46r5eg54ez",
+				"type":"video",
+				"format":"mp4"
+			},
+			"description" : "Ce rasoir est unique, il ne coupe pas. Il est électrique et vendu avec 54 piles AAA.",
+			"cible" : {
+				"sexe":"homme",
+				"age_min":18,
+				"age_max":50,
+				"pays":["France"],
+				"plateformes":["PC","Xbox","Android"],
+				"tags_cibles_id":[
+					1
+				]
+			},
+			"prix_max":0.26
+		}
+	],
+	"joueurs" : [
+		{
+			"id_joueur":1,
+			"pseudo":"xX_Dark_Sasuke_Xx",
+			"sexe":"homme",
+			"age":23,
+			"pays":"France",
+			"plateformes_jeu":["Xbox","IOS"],
+			"id_tag_favori":"Cuisine"
+		}
+	],
+	"tags" : [
+		{
+			"id_tag":1,
+			"tag":"Beauté"
+		},
+		{
+			"id_tag":2,
+			"tag":"Informatique"
+		},
+		{
+			"id_tag":3,
+			"tag":"Sport"
+		},
+		{
+			"id_tag":4,
+			"tag":"Cuisine"
+		},
+		{
+			"id_tag":5,
+			"tag":"Musique"
+		}
+	],
+	"clics_pub" : [
+		{
+			"id_joueur":1,
+			"datetime_clic":"2020-01-23T12:34:56.789Z",
+			"id_annonce":1,
+			"id_emplacement_annonce":1,
+			"id_jeu":1
+		}
+	],
+	"emplacements_annonces" : [
+		{
+			"id_emplacement_annonce":1,
+			"prix_min":0.04,
+			"description_emplacement" : "Sur la façade de l'hôtel de ville d'Astrub"
+		}
+	]
+}

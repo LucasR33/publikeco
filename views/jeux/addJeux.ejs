@@ -1,7 +1,7 @@
-<% include ./partials/template %>
+<% include ./../partials/template %>
   <body>
-      <% include ./partials/header %>
-      <% include ./partials/nav %>
+      <% include ./../partials/header %>
+      <% include ./../partials/nav %>
     <main role="main">
         <section class="panel important">
             <h2>Ajouter un jeu</h2>
@@ -31,14 +31,14 @@
                         <label for="fruit">Editeurs</label>
                         <select class="floatLabel" id="editeur" name="editeur">
                           <option value="blank"></option>
-                          <option value="Activision">Activision</option>
-                          <option value="Treyarch" selected>Treyarch</option>
-                          <option value="Riot Games">Riot Games</option>
+                          <option value="1">Activision</option>
+                          <option value="2" selected>Treyarch</option>
+                          <option value="3">Riot Games</option>
                         </select>
                       </div>
                   </div>
                   <div>
-                    <button type="submit" name="submit" value="Ajouter" />
+                    <button type="submit" name="submit" value="Ajouter">Ajouter</button>
                   </div>
                 </form>
               </li>
