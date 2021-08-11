@@ -1,8 +1,13 @@
 const jeu = require('../models/jeux.model.js');
 
 
+//TO-DO changer la redirection
 exports.index = (req, res) => {
-    res.render('jeux/addJeux');
+    jeu.find().then(data => {
+        res.render('jeux/addJeux', {
+            jeux: data
+        });
+    });
 };
 
 exports.create = (req, res) => {
