@@ -4,6 +4,8 @@ module.exports = (app) => {
     
     app.post('/annonces', annonce.create);
 
+    app.post('/annonce/:_id', annonce.validate)
+
     app.get('/annonce/listAnnonce', annonce.findAll);
 
     //app.get('/annonce/:annoId', annonce.findOne)
@@ -11,4 +13,6 @@ module.exports = (app) => {
     //app.put('/annonce/:annoId', annonce.update)
 
     //app.delete('/annonce/:annoId', annonce.delete)
+
+    app.post('/annonce/:annoId', annonce.validate)
 }

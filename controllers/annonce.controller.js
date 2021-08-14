@@ -55,3 +55,10 @@ exports.delete = (req, res) => {
 };
 
 //TO-DO Faire la requete de validation du jeu
+exports.validate = (req, res) => {
+    annonce.updateOne({_id: req.params._id}, {
+        valide: true
+    }, {new: true}).then(anno => {
+        res.redirect('../annonce/listAnnonce');
+    });
+};

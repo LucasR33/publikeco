@@ -4,7 +4,10 @@ module.exports = (app) => {
     
     app.post('/jeux/addJeux', jeux.create);
 
-    app.get('/jeux/addJeux', jeux.index);
+    app.post('/jeux/:_id', jeux.validationJeux)
+
+    app.get('/jeux/listJeux', jeux.index);
+
 
     //app.get('/jeux/addJeux', jeux.all);
 

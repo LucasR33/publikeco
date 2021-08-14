@@ -4,9 +4,7 @@ const jeu = require('../models/jeux.model.js');
 //TO-DO changer la redirection
 exports.index = (req, res) => {
     jeu.find().then(data => {
-        res.render('jeux/addJeux', {
-            jeux: data
-        });
+        res.render('jeux/listJeux', { jeux: data });
     });
 };
 
@@ -24,10 +22,10 @@ exports.create = (req, res) => {
 };
 
 exports.validationJeux = (req, res) => {
-    jeu.findByIdAndUpdate(req.params.id_jeu, {
+    jeu.updateOne({_id: req.params._id}, {
         valide: true
     }, {new: true}).then(game => {
-        res.send(game);
+        res.redirect('../jeux/listJeux')
     });
 };
 

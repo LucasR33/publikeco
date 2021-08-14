@@ -5,6 +5,9 @@ const fs = require('fs');
 const bodyParser = require('body-parser');
 const path = require('path');
 
+
+mongoose.set('useFindAndModify', false);
+
 const app = express();
 
 app.use(bodyParser.json())
