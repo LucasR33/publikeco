@@ -19,8 +19,8 @@ exports.create = (req, res) => {
 };
 
 exports.findAll = (req, res) => {
-    annonce.find().then(annonces => {
-        res.send(annonces);
+    annonce.find().then(data => {
+        res.render('annonce/listAnnonce', {anno: data});
     });
 };
 

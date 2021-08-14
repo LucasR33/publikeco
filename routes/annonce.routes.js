@@ -4,7 +4,7 @@ module.exports = (app) => {
     
     app.post('/annonces', annonce.create);
 
-    app.get('/annonce', annonce.findAll);
+    app.get('/annonce/listAnnonce', annonce.findAll);
 
     //app.get('/annonce/:annoId', annonce.findOne)
 
