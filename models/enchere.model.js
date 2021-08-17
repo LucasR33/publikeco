@@ -5,26 +5,31 @@ const EnchereSchema = new Schema({
   id_enchère: {
     type: Number
   },
-  id_editeur: {
-    type: Number,
+  jeu: {
+    type: String,
     required: true
   },
-  id_annonceurs: {
+  annonceurs: {
     type: Array,
     required: true
   },
-  id_annonceur_vainqueur: {
-    type: Number,
+  annonces: {
+    type: Array,
     required: true
+  },
+  annonceur_vainqueur: {
+    type: String
   },
   prix_vainqueur: {
-    type: Number,
-    required: true
+    type: Number
   },
-  id_emplacement_annonce: {
-    type: Number,
-    required: true
+  emplacement_annonce: {
+    type: Number
   },
+  done: {
+    type: Boolean,
+    required: true
+  }
 });
 
 module.exports = Enchere = mongoose.model('Enchere', EnchereSchema);

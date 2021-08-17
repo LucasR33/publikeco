@@ -1,0 +1,41 @@
+<% include ./../partials/template %>
+  <body>
+      <% include ./../partials/header %>
+      <% include ./../partials/nav %>
+    <main role="main">
+        <section class="panel important">
+            <h2>Créer une enchère</h2>
+            <ul>
+              <li>
+                <form action="addEnchere" method="POST">
+                  <!--  General -->
+                  <div class="form-group">
+                    <div class="controls">
+                    <label for="fruit">Jeux</label>
+                    <select class="floatLabel" id="nom_jeux" name="nom_jeux">
+                        <% jeux.forEach(element => { %>
+                        <option value=<%=element.nom_jeu%>><%=element.nom_jeu%></option>
+                        <% }) %>
+                    </select>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="controls">
+                    <label for="fruit">Annonce</label>
+                    <select class="floatLabel" id="libelle" name="libelle" multiple="multiple">
+                        <% annonces.forEach(elem => { %>
+                        <option value=<%=elem._id%>><%=elem.libelle%></option>
+                        <% }) %>
+                    </select>
+                    </div>
+                  </div>
+                  <div>
+                    <button type="submit" name="submit" value="Ajouter">Ajouter</button>
+                  </div>
+                </form>
+              </li>
+            </ul>
+          </section>
+    </main>
+  </body>
+</html>
