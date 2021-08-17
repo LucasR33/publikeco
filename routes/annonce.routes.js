@@ -2,9 +2,11 @@ module.exports = (app) => {
     const annonce = require('../controllers/annonce.controller.js');
 
     
-    app.post('/annonces', annonce.create);
+    app.post('/annonce/addAnnonce', annonce.create);
 
-    app.post('/annonce/:_id', annonce.validate)
+    app.post('/annonce/:_id', annonce.validate);
+
+    app.get('/annonce/addAnnonce', annonce.addAnnonce);
 
     app.get('/annonce/listAnnonce', annonce.findAll);
 
@@ -14,5 +16,5 @@ module.exports = (app) => {
 
     //app.delete('/annonce/:annoId', annonce.delete)
 
-    app.post('/annonce/:annoId', annonce.validate)
+    //app.post('/annonce/:annoId', annonce.validate)
 }

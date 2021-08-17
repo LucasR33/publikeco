@@ -10,8 +10,8 @@ const AnnonceSchema = new Schema({
     required: true
   },
   id_annonceur: {
-    type: Number,
-    contentType: String
+    type: String,
+    required: true
   },
   media: {
     data: Buffer,

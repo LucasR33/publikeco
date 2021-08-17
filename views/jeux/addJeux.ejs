@@ -7,7 +7,7 @@
             <h2>Ajouter un jeu</h2>
             <ul>
               <li>
-                <form action="/addJeux" method="POST">
+                <form action="addJeux" method="POST">
                   <!--  General -->
                   <div class="form-group">
                     <div class="controls">
@@ -30,10 +30,9 @@
                       <div class="controls">
                         <label for="fruit">Editeurs</label>
                         <select class="floatLabel" id="editeur" name="editeur">
-                          <option value="blank"></option>
-                          <option value="1">Activision</option>
-                          <option value="2" selected>Treyarch</option>
-                          <option value="3">Riot Games</option>
+                          <% data.forEach(element => { %>
+                            <option value=<%=element.nom%>><%=element.nom%></option>
+                            <% }) %>
                         </select>
                       </div>
                   </div>

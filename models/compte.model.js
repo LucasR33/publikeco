@@ -10,8 +10,7 @@ const CompteSchema = new Schema({
     required: true
   },
   prenom: {
-    type: String,
-    required: true
+    type: String
   },
   mdp: {
     type:String,
@@ -21,16 +20,8 @@ const CompteSchema = new Schema({
     type: String,
     required: true
   },
-  annonces: {
-    type: Array,
-    required: true
-  },
-  jeux: {
-    type: Array,
-    required: true
-  },
-  type:{
-    type:String,
+  type: {
+    type: String,
     required: true
   }
 });

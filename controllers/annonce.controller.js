@@ -1,10 +1,11 @@
 const annonce = require('../models/annonce.model');
+const compte = require('../models/compte.model');
 
 exports.create = (req, res) => {
     const newAnnonce = new Annonce({
         id_annonce: 2,
         libelle: req.body.libelle,
-        id_annonceur: 1,
+        id_annonceur: req.body.annonceur,
         // media: {
         //     data: fs.readFileSync('./images/affiches/iorigins.jpg'),
         //     contentType: 'image/jpg'
@@ -14,8 +15,14 @@ exports.create = (req, res) => {
         prix_max: req.body.prix_max,
         valide: false
       });
-      console.log(req.body.libelle);
-      newAnnonce.save().then(data => res.redirect('/annonce'));
+      newAnnonce.save().then(data => res.redirect('listAnnonce'));
+};
+
+exports.addAnnonce = (req, res) => {
+    compte.find({"type":"Annonceur"}).then(data => {
+        res.render('annonce/addAnnonce', {data:data});
+    })
+    
 };
 
 exports.findAll = (req, res) => {

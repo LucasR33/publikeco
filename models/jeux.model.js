@@ -10,12 +10,12 @@ const JeuxSchema = new Schema({
     required: true
   },
   id_tags: {
-    type: Number,
+    type: String,
     contentType: String
   },
   id_editeur: {
-    data: Number,
-    contentType: String
+    type: String,
+    required: true
   },
   emplacements_annonces: {
     type: Number,

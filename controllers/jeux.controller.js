@@ -1,10 +1,17 @@
 const jeu = require('../models/jeux.model.js');
+const compte = require('../models/compte.model');
 
 
 //TO-DO changer la redirection
 exports.index = (req, res) => {
     jeu.find().then(data => {
         res.render('jeux/listJeux', { jeux: data });
+    });
+};
+
+exports.addJeu = (req, res) => {
+    compte.find({"type":"Editeur"}).then(data => {
+        res.render('jeux/addJeux', {data:data});
     });
 };
 

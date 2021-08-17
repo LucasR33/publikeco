@@ -3,8 +3,9 @@
       <% include ./../partials/header %>
       <% include ./../partials/nav %>
     <main role="main">
-            <h2>Enchères</h2>
+            <h2>Annonces</h2>
             <% anno.forEach(element => { %>
+               <% if (element.libelle !== undefined ) { %> 
             <ul>
                 <div class="row">
                      <div class="col-md-12">
@@ -36,6 +37,7 @@
                      </div>
                 </div>
             </ul>
+            <% } %> 
         <% }); %>
         </section>
     </main>

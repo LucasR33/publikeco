@@ -8,6 +8,7 @@ module.exports = (app) => {
 
     app.get('/jeux/listJeux', jeux.index);
 
+    app.get('/jeux/addJeux', jeux.addJeu);
 
     //app.get('/jeux/addJeux', jeux.all);
 

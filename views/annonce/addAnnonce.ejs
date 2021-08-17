@@ -1,15 +1,25 @@
-<% include ./partials/template %>
+<% include ./../partials/template %>
   <body>
-      <% include ./partials/header %>
-      <% include ./partials/nav %>
+      <% include ./../partials/header %>
+      <% include ./../partials/nav %>
     <main role="main">
         <section class="panel important">
             <h2>Ajouter une annonce</h2>
             <ul>
               <li>
-                <form action="/annonce" method="POST">
+                <form action="addAnnonce" method="POST">
                   <!--  General -->
                   <div class="form-group">
+                    <div class="col-1-3 col-1-3-sm">
+                        <div class="controls">
+                          <label for="fruit">Annonceur</label>
+                          <select class="floatLabel" id="annonceur" name="annonceur">
+                            <% data.forEach(element => { %>
+                            <option value=<%=element.nom%>><%=element.nom%></option>
+                            <% }) %>
+                          </select>
+                        </div>
+                      </div>
                     <div class="controls">
                       <label for="name">Nom</label>
                       <input type="text" id="libelle" class="floatLabel" name="libelle">
@@ -40,7 +50,7 @@
                           <option value="France" selected>France</option>
                           <option value="Espagne">Espagne</option>
                         </select>
-                      </div>
+                     </div>
                     </div>
                     <div class="controls">
                       <label for="name">Age min</label>
