@@ -5,18 +5,11 @@ const jeux = require('../models/jeux.model');
 
 const async = require('async');
 
-
 exports.create = (req, res) => {
     let allAnnonceurs = [];
     let allAnnonces = req.body.libelle;
     allAnnonces.forEach(element => {
-        annonce.findById(element, {"id_annonceur": 1}, function(err, annonce){
-            if(err){
-                console.log(err);
-            } else {
-                allAnnonceurs.push(annonce.id_annonceur);
-            }
-        })
+        allAnnonceurs = annonce.findById(element);
     });
     console.log(allAnnonceurs);
     const newEnchere = new Enchere({
