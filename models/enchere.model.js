@@ -10,8 +10,7 @@ const EnchereSchema = new Schema({
     required: true
   },
   annonceurs: {
-    type: Array,
-    required: true
+    type: Array
   },
   annonces: {
     type: Array,
@@ -24,7 +23,8 @@ const EnchereSchema = new Schema({
     type: Number
   },
   emplacement_annonce: {
-    type: Number
+    type: Number,
+    required: true
   },
   done: {
     type: Boolean,
