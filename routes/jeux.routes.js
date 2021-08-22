@@ -10,6 +10,8 @@ module.exports = (app) => {
 
     app.get('/jeux/addJeux', jeux.addJeu);
 
+    app.get('/jeux/pickJeux', jeux.pickToPlay);
+
     //app.get('/jeux/addJeux', jeux.all);
 
     //app.get('/jeux/:annoId', jeux.findOne)

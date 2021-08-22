@@ -43,3 +43,9 @@ exports.delete = (req, res) => {
         res.redirect('/');
     });
 };
+
+exports.pickToPlay = (req, res) => {
+    jeu.find().then(data => {
+        res.render('jeux/pickJeux', {data: data});
+    });
+};

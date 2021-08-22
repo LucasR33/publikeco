@@ -9,17 +9,17 @@ const ClickSchema = new Schema({
     type: Date,
     required: true
   },
-  id_annonceur: {
-    type: Number,
-    required: true
+  annonceur: {
+    type: Object,
+    required: false
   },
   id_emplacement_annonce: {
     data: Number,
-    required: true
+    required: false
   },
-  id_jeu: {
-    type: Number,
-    required: true
+  jeu: {
+    type: String,
+    required: false
   },
 });
 

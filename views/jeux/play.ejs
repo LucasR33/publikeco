@@ -1,9 +1,10 @@
-<% include ./partials/template %>
+<% include ./../partials/template %>
   <body>
-      <% include ./partials/header %>
-      <% include ./partials/nav %>
+      <% include ./../partials/header %>
+      <% include ./../partials/nav %>
     <main role="main">
         <section class="panel important">
+            
             <h2>Jeu</h2>
             <ul>
             <li>
@@ -23,13 +24,12 @@
                     <div class="hover panel">
                     <div class="front">
                         <div class="box1">
-                        <p>Jeu</p>
+                        <p><%= game.nom_jeu %></p>
+                        <button onclick="displayAnnonce()">Click me</button>
                         </div>
                     </div>
-            
                     </div>
                     </div>
-            
                     <div class="col_third end">
                     <div class="hover panel">
                     <div class="front">
@@ -38,19 +38,22 @@
                         </div>
                     </div>
                     </div>
-                </div>
-                <div class="col_third end">
-                    <div class="hover panel">
-                        <div class="box3">
-                            <p>Publicité 3</p>
-                        </div>
-                        </div>
-            
-                </div>
-            
+                </div>            
             </li>
             </ul>
          </section>
     </main>
   </body>
+
+  <script>
+    var winningPrice = "<%= winningPrice %>";
+    var libelle = "<%= libelle %>";
+    var description = "<%= description %>";
+    var id_annonceur = "<%= id_annonceur %>";
+        function displayAnnonce() {
+        setTimeout(function() {
+            console.log(libelle)
+        }, 1000);
+    }
+  </script>
 </html>

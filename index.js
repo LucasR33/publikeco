@@ -39,7 +39,7 @@ app.get('/', (req, res) => {
 
 
 require('./routes/annonce.routes.js')(app);
-//require('./routes/click.routes.js')(app);
+require('./routes/click.routes.js')(app);
 require('./routes/compte.routes.js')(app);
 //require('./routes/emplacement.routes.js')(app);
 require('./routes/enchere.routes.js')(app);
@@ -47,26 +47,6 @@ require('./routes/jeux.routes.js')(app);
 require('./routes/joueur.routes.js')(app);
 //require('./routes/tag.routes.js')(app);
 
-app.get('/gestion', (req, res) => {
-  res.render('gestion')
-});
-
-app.get('/encheres', (req, res) => {
-  res.render('encheres')
-});
-
-//app.get('/annonce', (req, res) => {
-//  res.render('annonce')
-//});
-
-
-app.get('/jeux', (req, res) => {
-  res.render('jeux')
-});
-
-app.get('/jouer', (req, res) => {
-  res.render('jouer')
-});
 
 app.get('/', (req, res) => {
   res.render('index')

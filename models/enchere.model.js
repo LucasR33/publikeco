@@ -9,9 +9,6 @@ const EnchereSchema = new Schema({
     type: Object,
     required: true
   },
-  annonceurs: {
-    type: Array
-  },
   annonces: {
     type: Array,
     required: true

@@ -20,16 +20,14 @@ exports.create = (req, res) => {
             let list = req.body.libelle.map(e => ObjectId(e));
             annonce.find({"_id":{"$in":list}}, (err, ann) => {
                 ann = list.map(e => ann.find(s => s._id.equals(e)));
-                // for (var ann in data){
-                //     idAnnoArray.push(data[ann].id);
-                // }
-                    const newEnchere = new enchere({
-                        jeu: game,
-                        annonces: ann,
-                        emplacement_annonce: req.body.emp,
-                        done: false
-                    })
-                    newEnchere.save().then(data => res.redirect('listEnchere'));
+                const newEnchere = new enchere({
+                    jeu: game,
+                    annonces: ann,
+                    emplacement_annonce: req.body.emp,
+                    prix_vainqueur: 0,
+                    done: false
+                })
+                newEnchere.save().then(data => res.redirect('listEnchere'));
                 
                 });
         }

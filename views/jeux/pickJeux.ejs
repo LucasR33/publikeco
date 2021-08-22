@@ -1,0 +1,21 @@
+<% include ./../partials/template %>
+  <body>
+      <% include ./../partials/header %>
+      <% include ./../partials/nav %>
+    <main role="main">
+            <h2>Jeux</h2>
+            <form action="clickJeux" method="POST">
+                <div class="col-md-12">
+                    <div class="info">
+                        <select class="floatLabel" id="game" name="game">
+                        <% data.forEach(element => { %>
+                        <option value=<%=element._id%>><%=element.nom_jeu%></option>
+                        <% }) %>
+                    </select> 
+                    <button type="submit" name="submit" label="Jouer" class="btn btn-primary">Jouer</button>
+                    </div>
+                 </div>
+            </form>
+    </main>
+  </body>
+</html>
