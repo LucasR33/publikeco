@@ -8,19 +8,32 @@ const async = require('async');
 
 
 exports.create = (req, res) => {
-    let list = req.body.libelle.map(e => ObjectId(e));
-    annonce.find({"_id":{"$in":list}}, (err, data) => {
-        data = list.map(e => data.find(s => s._id.equals(e)));
-        console.log(data)
-            const newEnchere = new enchere({
-                jeu:req.body.nom_jeux,
-                annonces: data,
-                emplacement_annonce: req.body.emp,
-                done: false
-            })
-            newEnchere.save();
-        res.redirect('listEnchere');
-        });
+    // let idAnnoArray = [];
+    let idJeu = req.body.nom_jeux;
+    let test = idJeu;
+    var hex = /[0-9A-Fa-f]{6}/g;
+    test = (hex.test(test))? ObjectId(test) : test;
+    jeux.findOne({'_id': ObjectId(test)}, function(err, game) {
+        if(err){
+            console.log(err);
+        }else {
+            let list = req.body.libelle.map(e => ObjectId(e));
+            annonce.find({"_id":{"$in":list}}, (err, ann) => {
+                ann = list.map(e => ann.find(s => s._id.equals(e)));
+                // for (var ann in data){
+                //     idAnnoArray.push(data[ann].id);
+                // }
+                    const newEnchere = new enchere({
+                        jeu: game,
+                        annonces: ann,
+                        emplacement_annonce: req.body.emp,
+                        done: false
+                    })
+                    newEnchere.save().then(data => res.redirect('listEnchere'));
+                
+                });
+        }
+    });
 };
 
 exports.addEnchere = (req, res) => {
@@ -42,5 +55,5 @@ exports.addEnchere = (req, res) => {
 exports.findAll = (req, res) => {
     enchere.find().then(data => {
         res.render('enchere/listEnchere', {data: data});
-    }); 
-};
+        })   
+}; 

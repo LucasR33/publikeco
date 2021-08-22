@@ -6,7 +6,7 @@ const EnchereSchema = new Schema({
     type: Number
   },
   jeu: {
-    type: String,
+    type: Object,
     required: true
   },
   annonceurs: {
