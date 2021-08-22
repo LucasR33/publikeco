@@ -4,6 +4,8 @@ module.exports = (app) => {
     
     app.post('/jeux/clickJeux', click.clickJeux);
 
+    app.post('/click/clicked', click.clicked);
+
     app.get("/jeux/play/:idJeu", click.play);
 
     //app.get('/annonce/:annoId', annonce.findOne)

@@ -59,3 +59,8 @@ exports.play = (req, res) => {
         }
     });
 };
+
+
+exports.clicked = (req, res) => {
+    console.log(req);
+}

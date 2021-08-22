@@ -1,59 +1,81 @@
 <% include ./../partials/template %>
-  <body>
-      <% include ./../partials/header %>
-      <% include ./../partials/nav %>
+<body>
+    <% include ./../partials/header %>
+    <% include ./../partials/nav %>
     <main role="main">
         <section class="panel important">
-            
             <h2>Jeu</h2>
             <ul>
-            <li>
-            <div class="wrapper">
-                <div class="col_third">
-                    <div class="hover panel">
-                    <div class="front">
-                        <div class="box2">
-                        <p>Publicité 1</p>
+                <li>
+                    <div class="wrapper">
+                        <div class="col_third">
+                            <div class="hover panel">
+                                <div class="front">
+                                    <div class="box2">
+                                        <p>Publicité 1</p>
+                                        <button id="pub1" name="pub1" onclick="">Espace 1</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-            
-                    </div>
-                    </div>
-            
-                    <div class="col_third">
-                    <div class="hover panel">
-                    <div class="front">
-                        <div class="box1">
-                        <p><%= game.nom_jeu %></p>
-                        <button onclick="displayAnnonce()">Click me</button>
+                        <div class="col_third">
+                            <div class="hover panel">
+                                <div class="front">
+                                    <div class="box1">
+                                        <p><%= game.nom_jeu %></p>
+                                        <button onclick="displayAnnonce()">Jouer</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    </div>
-                    </div>
-                    <div class="col_third end">
-                    <div class="hover panel">
-                    <div class="front">
-                        <div class="box2">
-                        <p>Publicité 2</p>
+                        <div class="col_third end">
+                            <div class="hover panel">
+                                <div class="front">
+                                    <div class="box2">
+                                        <p>Publicité 2</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    </div>
-                </div>            
-            </li>
+                    </div>          
+                </li>
             </ul>
-         </section>
+        </section>
     </main>
-  </body>
+</body>
 
   <script>
     var winningPrice = "<%= winningPrice %>";
     var libelle = "<%= libelle %>";
     var description = "<%= description %>";
     var id_annonceur = "<%= id_annonceur %>";
-        function displayAnnonce() {
+    function displayAnnonce() {
         setTimeout(function() {
-            console.log(libelle)
-        }, 1000);
+            document.getElementById('pub1').innerHTML = libelle;
+            }, 1000);
     }
+
+    const btnPub1 = document.getElementById('pub1');
+    var clickData = {
+        "libelle":libelle,
+        "id_annonceur":id_annonceur
+    }
+    btnPub1.addEventListener('click', function(e) {
+        console.log("button was clicked");
+        fetch('/click/clicked', {
+            headers: { 'Content-Type': 'application/json' },
+            method: 'POST',
+            body:JSON.stringify(clickData)
+        })
+        .then(function(response) {
+            if(response.ok){
+                console.log("click recorded");
+                return;
+            } throw new Error("Request failed");
+        })
+        .catch(function(error){
+            console.log(err);
+        });
+    });
   </script>
 </html>
