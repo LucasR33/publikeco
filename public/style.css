@@ -1299,3 +1299,47 @@ a.genre:hover {
 .snip1578 .icons a:hover {
   color: #2980b9;
 }
+
+.container {
+  background-color: #eee;
+  width: 1000px;
+  margin: 10px auto;
+  display: grid;
+  grid-template-rows: 00px 400px 200px 100px;
+  grid-template-columns: 25% 25% 20% 25%;
+  grid-gap: 20px;
+  grid-template-areas: "head head head head" "nav main main ad" "nav main main ad" "fot fot fot fot";
+}
+.container > * {
+  background-color: white;
+  padding: 30px;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.nav {
+  background-image: url(img/banner1.jpg);
+  background-size: contain;
+  cursor: pointer;
+  grid-area: nav;
+}
+
+.main-content {
+  grid-area: main;
+}
+
+.side-bar {
+  grid-area: side;
+}
+
+.advertising {
+  background-image: url(img/banner2.png);
+  background-size: contain;
+  cursor: pointer;
+  grid-area: ad;
+}
+
+.footer {
+  grid-area: fot;
+}

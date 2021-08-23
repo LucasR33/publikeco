@@ -1,5 +1,3 @@
-
-
 <% include ./../partials/template %>
   <body>
       <% include ./../partials/header %>
@@ -7,7 +5,7 @@
     <main role="main">
             <h2>Compte</h2>
             <a href="addCompte"><figure class="snip1578 colbl">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Add_user_icon_%28blue%29.svg/895px-Add_user_icon_%28blue%29.svg.png" alt="profile-sample6" />
+              <img src="/public/img/adduser.png" alt="profile-sample6" />
               <figcaption>
                 <div class="icons">
                   <b>Ajouter un compte</b>
@@ -17,7 +15,7 @@
             <% compte.forEach(element => { %>
                <% if (element.nom !== undefined ) { %>
 <figure class="snip1578">
-  <img src="https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png" alt="profile-sample6" />
+  <img src="/public/img/userlist.png" alt="profile-sample6" />
   <figcaption>
     <h3><%= element.nom %> <%= element.prenom %></h3>
     <div class="icons">

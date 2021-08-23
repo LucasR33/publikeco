@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="./../../public/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
 
-  
+
 </head>
 <body>
     <% include ./../partials/header %>
@@ -15,42 +15,13 @@
     <main role="main">
         <section class="panel important">
             <h2>Jeu</h2>
-            <ul>
-                <li>
-                    <div class="wrapper">
-                        <div class="col_third">
-                            <div class="hover panel">
-                                <div class="front">
-                                    <div class="box2">
-                                        <p>Publicité 1</p>
-                                        <button id="pub1" name="pub1" onclick="">Espace 1</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col_third">
-                            <div class="hover panel">
-                                <div class="front">
-                                    <div class="box1">
-                                        <p><%= game.nom_jeu %></p>
-                                        <button onclick="displayAnnonce()">Jouer</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col_third end">
-                            <div class="hover panel">
-                                <div class="front">
-                                    <div class="box2">
-                                        <p>Publicité 2</p>
-                                        <button id="pub2" name="pub2" onclick="">Espace 2</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>          
-                </li>
-            </ul>
+
+                  <div class="container">
+<div class="nav" onclick="window.location='#';"></div>
+<div class="main-content">Jeu</div>
+<div class="advertising" onclick="window.location='#';></div>
+</div>
+
         </section>
     </main>
 </body>
@@ -70,7 +41,7 @@
         setTimeout(function() {
             document.getElementById('pub2').innerHTML = libelle;
         }, 5000);
-        
+
     }
 
     const btnPub1 = document.getElementById('pub1');
