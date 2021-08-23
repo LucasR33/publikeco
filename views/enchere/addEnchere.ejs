@@ -24,7 +24,7 @@
                     <label for="fruit">Annonce</label>
                     <select class="floatLabel" id="libelle" name="libelle" multiple="multiple">
                         <% annonces.forEach(elem => { %>
-                        <option value=<%=elem._id%>><%=elem.libelle%></option>
+                        <option value=<%=elem._id%>><%=elem.id_annonceur%> - <%=elem.libelle%></option>
                         <% }) %>
                     </select>
                     </div>
