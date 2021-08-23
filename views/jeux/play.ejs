@@ -33,6 +33,7 @@
                                 <div class="front">
                                     <div class="box2">
                                         <p>Publicité 2</p>
+                                        <button id="pub2" name="pub2" onclick="">Espace 2</button>
                                     </div>
                                 </div>
                             </div>
@@ -49,16 +50,25 @@
     var libelle = "<%= libelle %>";
     var description = "<%= description %>";
     var id_annonceur = "<%= id_annonceur %>";
+    var winPrice = "<%= winningPrice %>";
+    var id_annonce = "<%= id_annonce %>";
+    var game_name = "<%= game.nom_jeu %>";
     function displayAnnonce() {
         setTimeout(function() {
             document.getElementById('pub1').innerHTML = libelle;
-            }, 1000);
+        }, 1000);
+        setTimeout(function() {
+            document.getElementById('pub2').innerHTML = libelle;
+        }, 5000);
+        
     }
 
     const btnPub1 = document.getElementById('pub1');
     var clickData = {
-        "libelle":libelle,
-        "id_annonceur":id_annonceur
+        "id_annonceur":id_annonceur,
+        "id_annonce":id_annonce,
+        "winPrice":winPrice,
+        "game_name":game_name
     }
     btnPub1.addEventListener('click', function(e) {
         console.log("button was clicked");

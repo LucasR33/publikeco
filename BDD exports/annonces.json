@@ -1,0 +1,2 @@
+{"_id":{"$oid":"61234866587f7b4414a1b7d9"},"cible":["","10","30","Espagne"],"id_annonce":2,"libelle":"Nouvelles chaussures","id_annonceur":"Adidas","description":"Acheter nos chaussures","prix_max":10,"valide":true,"__v":0}
+{"_id":{"$oid":"61234898587f7b4414a1b7df"},"cible":["H/F","10","100","France"],"id_annonce":2,"libelle":"Nouveau T-Shirt","id_annonceur":"Puma","description":"Acheter nos t-shirt","prix_max":13,"valide":true,"__v":0}
