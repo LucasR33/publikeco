@@ -3,6 +3,7 @@ const jeux = require('../models/jeux.model');
 const enchere = require('../models/enchere.model');
 
 var ObjectId = require('mongodb').ObjectID;
+const clickRoutes = require('../routes/click.routes');
 
 exports.clickJeux = (req, res) => {
     const newClick = new click({
@@ -62,5 +63,13 @@ exports.play = (req, res) => {
 
 
 exports.clicked = (req, res) => {
-    console.log(req);
-}
+    const newClick = new Click({
+        datetime_clic: new Date(),
+        annonceur:req.body.id_annonceur,
+        jeu:req.body.game_name,
+        prix_annonce:req.body.winPrice,
+        id_annonce:req.body.id_annonce,
+        annonce_desc:req.body.libelle
+    });
+    newClick.save()
+};

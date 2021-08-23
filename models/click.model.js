@@ -10,7 +10,7 @@ const ClickSchema = new Schema({
     required: true
   },
   annonceur: {
-    type: Object,
+    type: String,
     required: false
   },
   id_emplacement_annonce: {
@@ -21,6 +21,14 @@ const ClickSchema = new Schema({
     type: String,
     required: false
   },
+  prix_annonce: {
+    type: Number,
+    required: false
+  },
+  id_annonce: {
+    type: String,
+    required: false
+  }
 });
 
 module.exports = Click = mongoose.model('Click', ClickSchema);

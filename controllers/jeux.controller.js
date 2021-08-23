@@ -24,7 +24,7 @@ exports.create = (req, res) => {
         valide: false
     });
     jeux.save().then(data => {
-        res.send(data);
+        res.redirect('../jeux/listJeux');
     });
 };
 

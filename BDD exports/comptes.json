@@ -1,0 +1,5 @@
+{"_id":{"$oid":"61234450587f7b4414a1b7b7"},"nom":"Adidas","prenom":"","mdp":"azerty","email":"adi@das.fr","type":"Annonceur","__v":0}
+{"_id":{"$oid":"61234464587f7b4414a1b7ba"},"nom":"Puma","prenom":"","mdp":"azerty","email":"pu@ma.fr","type":"Annonceur","__v":0}
+{"_id":{"$oid":"61234477587f7b4414a1b7bd"},"nom":"Ea Sports","prenom":"","mdp":"azerty","email":"ea@sports.fr","type":"Editeur","__v":0}
+{"_id":{"$oid":"6123448c587f7b4414a1b7c0"},"nom":"Namco","prenom":"","mdp":"azerty","email":"nam@co.fr","type":"Editeur","__v":0}
+{"_id":{"$oid":"612347be587f7b4414a1b7c8"},"nom":"Lucas","prenom":"Roux","mdp":"azerty","email":"lucas@roux.fr","type":"Administration","__v":0}

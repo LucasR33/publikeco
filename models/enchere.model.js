@@ -26,6 +26,10 @@ const EnchereSchema = new Schema({
   done: {
     type: Boolean,
     required: true
+  },
+  datetime_enchere: {
+    type: Date,
+    required: true
   }
 });
 
