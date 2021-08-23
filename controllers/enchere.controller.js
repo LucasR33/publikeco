@@ -21,6 +21,7 @@ exports.create = (req, res) => {
             annonce.find({"_id":{"$in":list}}, (err, ann) => {
                 ann = list.map(e => ann.find(s => s._id.equals(e)));
                 const newEnchere = new enchere({
+                    datetime_enchere: new Date(),
                     jeu: game,
                     annonces: ann,
                     emplacement_annonce: req.body.emp,

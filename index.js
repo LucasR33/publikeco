@@ -1,7 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
-const fs = require('fs');
-// const multer = require('multer');
+
 const bodyParser = require('body-parser');
 const path = require('path');
 const async = require('async');
@@ -10,6 +9,7 @@ const async = require('async');
 mongoose.set('useFindAndModify', false);
 
 const app = express();
+
 
 app.use(bodyParser.json())
 app.use(express.urlencoded({ extended: false }));

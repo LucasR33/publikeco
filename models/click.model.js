@@ -11,7 +11,7 @@ const ClickSchema = new Schema({
   },
   annonceur: {
     type: String,
-    required: true
+    required: false
   },
   id_emplacement_annonce: {
     data: Number,
@@ -19,15 +19,15 @@ const ClickSchema = new Schema({
   },
   jeu: {
     type: String,
-    required: true
+    required: false
   },
   prix_annonce: {
     type: Number,
-    required: true
+    required: false
   },
   id_annonce: {
     type: String,
-    required: true
+    required: false
   }
 });
 

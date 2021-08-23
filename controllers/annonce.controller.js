@@ -3,13 +3,10 @@ const compte = require('../models/compte.model');
 
 exports.create = (req, res) => {
     const newAnnonce = new Annonce({
+        datetime_annonce: new Date(),
         id_annonce: 2,
         libelle: req.body.libelle,
         id_annonceur: req.body.annonceur,
-        // media: {
-        //     data: fs.readFileSync('./images/affiches/iorigins.jpg'),
-        //     contentType: 'image/jpg'
-        // },
         description: req.body.description,
         cible: [req.body.sexe, req.body.agemin, req.body.agemax, req.body.pays],
         prix_max: req.body.prix_max,

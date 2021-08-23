@@ -72,5 +72,4 @@ exports.clicked = (req, res) => {
         annonce_desc:req.body.libelle
     });
     newClick.save()
-    console.log(req.body);
-}
+};

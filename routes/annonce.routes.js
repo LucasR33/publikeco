@@ -1,6 +1,5 @@
 module.exports = (app) => {
     const annonce = require('../controllers/annonce.controller.js');
-
     
     app.post('/annonce/addAnnonce', annonce.create);
 

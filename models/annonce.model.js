@@ -5,6 +5,10 @@ const AnnonceSchema = new Schema({
   id_annonce: {
     type: Number
   },
+  datetime_annonce: {
+    type: Date,
+    required: true
+  },
   libelle: {
     type: String,
     required: true
