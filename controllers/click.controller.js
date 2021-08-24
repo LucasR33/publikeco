@@ -1,6 +1,6 @@
 const click = require('../models/click.model');
 const jeux = require('../models/jeux.model');
-const enchere = require('../models/enchere.model');
+const encheres = require('../models/enchere.model');
 
 var ObjectId = require('mongodb').ObjectID;
 const clickRoutes = require('../routes/click.routes');
@@ -19,7 +19,7 @@ exports.play = (req, res) => {
         if(err){
             console.log(err);
         } else {
-            enchere.find({"jeu._id":ObjectId(game._id)}, function(err, enchere){
+            encheres.find({"jeu._id":ObjectId(game._id)}, function(err, enchere){
                 if(err){
                     console.log(err);
                 } else {
@@ -45,6 +45,14 @@ exports.play = (req, res) => {
                     var libelle = annonces[winningBid].libelle
                     var description =  annonces[winningBid].description
                     var id_annonceur = annonces[winningBid].id_annonceur
+                    var enchId = enchere[0]._id
+                    console.log(enchId)
+                    encheres.findByIdAndUpdate(ObjectId(enchId), { annonceur_vainqueur : annonces[winningBid], prix_vainqueur :  winningPrice, done: true}, function (err, result){
+                        if(err){
+                            console.log(err)
+                        }
+                    });
+
                     res.render('jeux/play', {
                         game:game,
                         enchere:enchere,

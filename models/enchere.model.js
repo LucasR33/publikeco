@@ -14,7 +14,7 @@ const EnchereSchema = new Schema({
     required: true
   },
   annonceur_vainqueur: {
-    type: String
+    type: Object
   },
   prix_vainqueur: {
     type: Number

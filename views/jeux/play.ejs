@@ -17,15 +17,17 @@
             <h2>Jeu</h2>
 
                   <div class="container">
-<div class="nav" onclick="window.location='#';"></div>
-<div class="main-content">Jeu</div>
-<div class="advertising" onclick="window.location='#';></div>
+<div class="nav" >
+    <button type="button" id="pub1"></button>
 </div>
-
+<div class="main-content" onclick="displayAnnonce()">Cliquez pour jouer</div>
+<div class="advertising" id="pub2">
+    <button type="button" id="pub1"></button>
+</div>
+</div>
         </section>
     </main>
 </body>
-
   <script>
     var winningPrice = "<%= winningPrice %>";
     var libelle = "<%= libelle %>";
