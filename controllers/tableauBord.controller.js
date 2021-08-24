@@ -32,23 +32,15 @@ exports.allWonEnchere = (req, res) => {
     });
 }
 
-//Retourne l'annonce vendu la plus chère
-exports.maxWonEnchere = (req, res) => {
-    var o = {},
-    self = this;
-    o.map = function () {
-        if(this.prix_vainqueur > 0 && this.done === true){
-            emit({annonceur: this.annonceur_vainqueur.id_annonceur, prix: this.prix_vainqueur}, 1)
-        }
-        
-    };
-    o.reduce = function (k, vals) {
-        return vals.length
-    };
-
-    enchere.mapReduce(o, function (err, results) {
-        if(err) throw err;
-        res.json(results)
-        console.log(results)
-    });
+//Retourne le nombre d'annonces par prix
+exports.nbEnchereParPrix = (req, res) => {
+    acc = []
+    annonce.find().then(data => {
+        const nbEnchere =  data.reduce((acc, it) => {
+            acc[it.prix_max] = acc[it.prix_max] + 1 || 1;
+            console.log(acc)
+            return acc;
+        }, {});
+        res.json(nbEnchere)
+    })
 }
