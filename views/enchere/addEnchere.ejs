@@ -29,6 +29,9 @@
                    </select>
                     </div>
                   </div>
+                  <% if (errors !== undefined && errors.find(error => error.param == "libelle") !== undefined) { %>
+                    <p class="text-danger">Sélectionnez au moins une annonce</p>
+                  <% }; %>
 
                   <div class="form-group">
                     <div class="controls">
