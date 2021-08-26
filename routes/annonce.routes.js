@@ -1,7 +1,19 @@
+const { body, validationResult } = require('express-validator');
+
 module.exports = (app) => {
     const annonce = require('../controllers/annonce.controller.js');
-    
-    app.post('/annonce/addAnnonce', annonce.create);
+
+    app.post(
+        '/annonce/addAnnonce',
+        body('libelle').notEmpty(),
+        body('description').notEmpty(),
+        body('prix_max').isDecimal(),
+        body('agemin').isNumeric(),
+        body('agemax').isNumeric(),
+        body('plateforme').notEmpty(),
+        body('sexe').notEmpty(),
+        annonce.create
+    );
 
     app.post('/annonce/:_id', annonce.validate);
 

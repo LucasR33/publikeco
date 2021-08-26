@@ -1,8 +1,15 @@
+const { body, validationResult } = require('express-validator');
+
 module.exports = (app) => {
     const jeux = require('../controllers/jeux.controller.js');
 
-    
-    app.post('/jeux/addJeux', jeux.create);
+
+    app.post(
+        '/jeux/addJeux',
+        body('nom').notEmpty(),
+        body('tags').notEmpty(),
+        jeux.create
+    );
 
     app.post('/jeux/:_id', jeux.validationJeux)
 

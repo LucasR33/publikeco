@@ -1,78 +1,104 @@
 <% include ./../partials/template %>
-  <body>
-      <% include ./../partials/header %>
-      <% include ./../partials/nav %>
-    <main role="main">
-        <section class="panel important">
-            <h2>Ajouter une annonce</h2>
-            <ul>
-              <li>
-                <form action="addAnnonce" method="POST">
-                  <!--  General -->
-                  <div class="form-group">
-                    <div class="col-1-3 col-1-3-sm">
-                        <div class="controls">
-                          <label for="fruit">Annonceur</label>
-                          <select class="floatLabel" id="annonceur" name="annonceur">
-                            <% data.forEach(element => { %>
-                            <option value=<%=element.nom%>><%=element.nom%></option>
-                            <% }) %>
-                          </select>
-                        </div>
-                      </div>
-                    <div class="controls">
-                      <label for="name">Nom</label>
-                      <input type="text" id="libelle" class="floatLabel" name="libelle">
-                    </div>
-                    <div class="controls">
-                      <label for="comments">Caractéristiques</label>
-                      <textarea name="description" class="floatLabel" id="description"></textarea>
-                      </div>
-                    <div class="controls">
-                      <label for="name">Prix</label>
-                      <input type="text" id="prix_max" class="floatLabel" name="prix_max">
-                    </div>
-                  </div>
-                  <!--  Details --><br><br>
-                  <div class="form-group">
-                    <h2 class="heading">Cible</h2>
-                      <div class="grid">
-                    <div class="col-1-3 col-1-3-sm">
-                      <div class="controls">
-                        <label for="fruit">Pays</label>
-                        <select class="floatLabel" id="pays" name="pays">
+
+    <body>
+        <% include ./../partials/header %>
+            <% include ./../partials/nav %>
+                <main role="main">
+                    <section class="panel important">
+                        <h2>Ajouter une annonce</h2>
+                        <ul>
+                            <li>
+                                <form action="addAnnonce" method="POST">
+                                    <!--  General -->
+                                    <div class="form-group">
+                                        <div class="col-1-3 col-1-3-sm">
+                                            <div class="controls">
+                                                <label for="fruit">Annonceur</label>
+                                                <select class="floatLabel" id="annonceur" name="annonceur">
+                                                    <% data.forEach(element => { %>
+                                                        <option value=<%=element.nom%> >
+                                                            <%=element.nom%>
+                                                        </option>
+                                                    <% }) %>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="controls">
+                                            <label for="name">Nom</label>
+                                            <input type="text" id="libelle" class="floatLabel" name="libelle">
+                                            <% if (errors !== undefined && errors.find(error => error.param == "libelle") !== undefined) { %>
+                                                <p class="text-danger">Ce champ est requis</p>
+                                                <% }; %>
+                                        </div>
+                                        <div class="controls">
+                                            <label for="comments">Caractéristiques</label>
+                                            <textarea name="description" class="floatLabel" id="description"></textarea>
+                                            <% if (errors !== undefined && errors.find(error => error.param == "description") !== undefined) { %>
+                                                <p class="text-danger">Ce champ est requis</p>
+                                                <% }; %>
+                                        </div>
+                                        <div class="controls">
+                                            <label for="name">Prix par clic</label>
+                                            <input type="text" id="prix_max" class="floatLabel" name="prix_max">
+                                            <% if (errors !== undefined && errors.find(error => error.param == "prix_max") !== undefined) { %>
+                                                <p class="text-danger">Le prix saisi doit être un nombre valide.</p>
+                                                <% }; %>
+                                        </div>
+                                    </div>
+                                    <!--  Details --><br><br>
+                                    <div class="form-group">
+                                        <h2 class="heading">Cible</h2>
+                                        <div class="grid">
+                                            <div class="col-1-3 col-1-3-sm">
+                                                <div class="controls">
+                                                    <label for="fruit">Pays</label>
+                                                    <select class="floatLabel" id="pays" name="pays">
                           <option value="blank"></option>
                           <option value="Allemagne">Allemagne</option>
                           <option value="France" selected>France</option>
                           <option value="Espagne">Espagne</option>
                         </select>
-                     </div>
-                    </div>
-                    <div class="controls">
-                      <label for="name">Age min</label>
-                      <input type="text" id="agemin" class="floatLabel" name="agemin">
-                    </div>
-                    <div class="controls">
-                      <label for="name">Age Max</label>
-                      <input type="text" id="agemax" class="floatLabel" name="agemax">
-                    </div>
-                    <div class="controls">
-                      <label for="name">Plateforme</label>
-                      <input type="text" id="plateforme" class="floatLabel" name="plateforme">
-                    </div>
-                    <div class="controls">
-                      <label for="name">sexe</label>
-                      <input type="text" id="sexe" class="floatLabel" name="sexe">
-                    </div>
-                     </div>
-                  </div> <!-- /.form-group -->
-                  <div>
-                    <button type="submit" name="submit" label="Ajouter" class="btn btn-primary">Ajouter</button>
-                  </div>
-                </form>
-              </li>
-            </ul>
-          </section>
-    </main>
-  </body>
-</html>
+                                                </div>
+                                            </div>
+                                            <div class="controls">
+                                                <label for="name">Age min</label>
+                                                <input type="text" id="agemin" class="floatLabel" name="agemin">
+                                                <% if (errors !== undefined && errors.find(error => error.param == "agemin") !== undefined) { %>
+                                                    <p class="text-danger">L'âge saisi est invalide</p>
+                                                    <% }; %>
+                                            </div>
+                                            <div class="controls">
+                                                <label for="name">Age Max</label>
+                                                <input type="text" id="agemax" class="floatLabel" name="agemax">
+                                                <% if (errors !== undefined && errors.find(error => error.param == "agemax") !== undefined) { %>
+                                                    <p class="text-danger">L'âge saisi est invalide</p>
+                                                    <% }; %>
+                                            </div>
+                                            <div class="controls">
+                                                <label for="name">Plateforme</label>
+                                                <input type="text" id="plateforme" class="floatLabel" name="plateforme">
+                                                <% if (errors !== undefined && errors.find(error => error.param == "plateforme") !== undefined) { %>
+                                                    <p class="text-danger">Ce champ est requis</p>
+                                                    <% }; %>
+                                            </div>
+                                            <div class="controls">
+                                                <label for="name">sexe</label>
+                                                <input type="text" id="sexe" class="floatLabel" name="sexe">
+                                                <% if (errors !== undefined && errors.find(error => error.param == "sexe") !== undefined) { %>
+                                                    <p class="text-danger">Ce champ est requis</p>
+                                                    <% }; %>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /.form-group -->
+                                    <div>
+                                        <button type="submit" name="submit" label="Ajouter" class="btn btn-primary">Ajouter</button>
+                                    </div>
+                                </form>
+                            </li>
+                        </ul>
+                    </section>
+                </main>
+    </body>
+
+    </html>

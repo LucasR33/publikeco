@@ -1,48 +1,56 @@
 <% include ./../partials/template %>
-  <body>
-      <% include ./../partials/header %>
-      <% include ./../partials/nav %>
-    <main role="main">
-        <section class="panel important">
-            <h2>Ajouter un jeu</h2>
-            <ul>
-              <li>
-                <form action="addJeux" method="POST">
-                  <!--  General -->
-                  <div class="form-group">
-                    <div class="controls">
-                      <label for="name">Nom</label>
-                      <input type="text" id="nom" class="floatLabel" name="nom">
-                    </div>
-                    <div class="controls">
-                      <label for="comments">Tags</label>
-                      <textarea name="tags" class="floatLabel" id="tags"></textarea>
-                    </div>
-                    <div class="controls">
-                        <label for="fruit">Nombre d'emplacements d'annonces</label>
-                        <select class="floatLabel" id="empAnno" name="empAnno">
+
+    <body>
+        <% include ./../partials/header %>
+            <% include ./../partials/nav %>
+                <main role="main">
+                    <section class="panel important">
+                        <h2>Ajouter un jeu</h2>
+                        <ul>
+                            <li>
+                                <form action="addJeux" method="POST">
+                                    <!--  General -->
+                                    <div class="form-group">
+                                        <div class="controls">
+                                            <label for="name">Nom</label>
+                                            <input type="text" id="nom" class="floatLabel" name="nom">
+                                            <% if (errors !== undefined && errors.find(error => error.param == "nom") !== undefined) { %>
+                                                <p class="text-danger">Ce champ est requis</p>
+                                                <% }; %>
+                                        </div>
+                                        <div class="controls">
+                                            <label for="comments">Tags</label>
+                                            <textarea name="tags" class="floatLabel" id="tags"></textarea>
+                                            <% if (errors !== undefined && errors.find(error => error.param == "tags") !== undefined) { %>
+                                                <p class="text-danger">Ce champ est requis</p>
+                                                <% }; %>
+                                        </div>
+                                        <div class="controls">
+                                            <label for="fruit">Nombre d'emplacements d'annonces</label>
+                                            <select class="floatLabel" id="empAnno" name="empAnno">
                           <option value="blank"></option>
                           <option value="1">1</option>
                           <option value="2" selected>2</option>
                           <option value="3">3</option>
                         </select>
-                      </div>
-                      <div class="controls">
-                        <label for="fruit">Editeurs</label>
-                        <select class="floatLabel" id="editeur" name="editeur">
+                                        </div>
+                                        <div class="controls">
+                                            <label for="fruit">Editeurs</label>
+                                            <select class="floatLabel" id="editeur" name="editeur">
                           <% data.forEach(element => { %>
                             <option value=<%=element.nom%>><%=element.nom%></option>
                             <% }) %>
                         </select>
-                      </div>
-                  </div>
-                  <div>
-                    <button type="submit" name="submit" value="Ajouter">Ajouter</button>
-                  </div>
-                </form>
-              </li>
-            </ul>
-          </section>
-    </main>
-  </body>
-</html>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <button type="submit" name="submit" value="Ajouter">Ajouter</button>
+                                    </div>
+                                </form>
+                            </li>
+                        </ul>
+                    </section>
+                </main>
+    </body>
+
+    </html>
