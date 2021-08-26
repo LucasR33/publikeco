@@ -1,50 +1,65 @@
 <% include ./../partials/template %>
-  <body>
-      <% include ./../partials/header %>
-      <% include ./../partials/nav %>
-    <main role="main">
-        <section class="panel important">
-            <h2>Ajouter un compte</h2>
-            <ul>
-              <li>
-                <form action="addCompte" method="POST">
-                  <!--  General -->
-                  <div class="form-group">
-                    <div class="col-1-3 col-1-3-sm">
-                        <div class="controls">
-                          <label for="fruit">Compte</label>
-                          <select class="floatLabel" id="type" name="type">
-                            <option value="blank"></option>
-                            <option value="Annonceur">Annonceur</option>
-                            <option value="Editeur" selected>Editeur</option>
-                            <option value="Administration">Administration</option>
-                          </select>
-                        </div>
-                      </div>
-                    <div class="controls">
-                      <label for="name">Nom</label>
-                      <input type="text" id="nom" class="floatLabel" name="nom">
-                    </div>
-                    <div class="controls">
-                      <label for="comments">Prénom</label>
-                      <input name="prenom" class="floatLabel" id="prenom">
-                      </div>
-                    <div class="controls">
-                      <label for="email">Mot de passe</label>
-                      <input type="text" name="mdp" id="mdp">
-                    </div>
-                    <div class="controls">
-                      <label for="name">Email</label>
-                      <input type="text" id="email" class="floatLabel" name="email">
-                    </div>
-                  </div>
-                  <div>
-                    <button type="submit" name="submit" label="Ajouter" class="btn btn-primary">Ajouter</button>
-                  </div>
-                </form>
-              </li>
-            </ul>
-          </section>
-    </main>
-  </body>
-</html>
+
+    <body>
+        <% include ./../partials/header %>
+            <% include ./../partials/nav %>
+                <main role="main">
+                    <section class="panel important">
+                        <h2>Ajouter un compte</h2>
+                        <ul>
+                            <li>
+                                <form action="addCompte" method="POST">
+                                    <!--  General -->
+                                    <div class="form-group">
+                                        <div class="col-1-3 col-1-3-sm">
+                                            <div class="controls">
+                                                <label for="fruit">Compte</label>
+                                                <select class="floatLabel" id="type" name="type">
+                                                <option value="blank"></option>
+                                                <option value="Annonceur">Annonceur</option>
+                                                <option value="Editeur" selected>Editeur</option>
+                                                <option value="Administration">Administration</option>
+                                              </select>
+                                            </div>
+                                        </div>
+                                        <div class="controls">
+                                            <label for="name">Nom</label>
+                                            <input type="text" id="nom" class="floatLabel" name="nom">
+                                            <% if (errors !== undefined && errors.find(error => error.param == "nom") !== undefined) { %>
+                                                <p class="text-danger">Ce champ est requis</p>
+                                                <% }; %>
+                                        </div>
+                                        <div class="controls">
+                                            <label for="comments">Prénom</label>
+                                            <input name="prenom" class="floatLabel" id="prenom">
+                                            <% if (errors !== undefined && errors.find(error => error.param == "prenom") !== undefined) { %>
+                                                <p class="text-danger">Ce champ est requis</p>
+                                                <% }; %>
+                                        </div>
+                                        <div class="controls">
+                                            <label for="email">Mot de passe</label>
+                                            <input type="text" name="mdp" id="mdp">
+                                            <% if (errors !== undefined && errors.find(error => error.param == "mdp") !== undefined) { %>
+                                                <p class="text-danger">Le mot de passe doit contenir au moins 6 caractères dont une minuscule, une majuscule et un chiffre</p>
+                                                <% }; %>
+                                        </div>
+                                        <div class="controls">
+                                            <label for="name">Email</label>
+                                            <input type="text" id="email" class="floatLabel" name="email">
+
+                                            <% if (errors !== undefined && errors.find(error => error.param == "email") !== undefined) { %>
+                                                <p class="text-danger">Adresse e-mail invalide</p>
+                                                <% }; %>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <button type="submit" name="submit" label="Ajouter" class="btn btn-primary">Ajouter</button>
+                                    </div>
+                                </form>
+                            </li>
+                        </ul>
+                    </section>
+                </main>
+    </body>
+
+    </html>
