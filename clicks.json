@@ -1,0 +1,16 @@
+{"_id":{"$oid":"61253d32c1ff785a96c9a790"},"datetime_clic":{"$date":"2021-08-24T18:40:50.838Z"},"__v":0}
+{"_id":{"$oid":"61253d38c1ff785a96c9a795"},"datetime_clic":{"$date":"2021-08-24T18:40:56.098Z"},"annonceur":"Sony","jeu":"Call Of Duty","prix_annonce":16.5,"id_annonce":"61253c48c1ff785a96c9a74a","__v":0}
+{"_id":{"$oid":"61253d3ac1ff785a96c9a797"},"datetime_clic":{"$date":"2021-08-24T18:40:58.418Z"},"annonceur":"Sony","jeu":"Call Of Duty","prix_annonce":16.5,"id_annonce":"61253c48c1ff785a96c9a74a","__v":0}
+{"_id":{"$oid":"61253d3ec1ff785a96c9a799"},"datetime_clic":{"$date":"2021-08-24T18:41:02.665Z"},"__v":0}
+{"_id":{"$oid":"61253d42c1ff785a96c9a79e"},"datetime_clic":{"$date":"2021-08-24T18:41:06.252Z"},"annonceur":"Apple","jeu":"Sims","prix_annonce":15.400000000000002,"id_annonce":"61253c2ac1ff785a96c9a746","__v":0}
+{"_id":{"$oid":"61253d44c1ff785a96c9a7a0"},"datetime_clic":{"$date":"2021-08-24T18:41:08.542Z"},"annonceur":"Apple","jeu":"Sims","prix_annonce":15.400000000000002,"id_annonce":"61253c2ac1ff785a96c9a746","__v":0}
+{"_id":{"$oid":"61253d48c1ff785a96c9a7a2"},"datetime_clic":{"$date":"2021-08-24T18:41:12.212Z"},"__v":0}
+{"_id":{"$oid":"61253d4bc1ff785a96c9a7a7"},"datetime_clic":{"$date":"2021-08-24T18:41:15.639Z"},"annonceur":"Sony","jeu":"Fortnite","prix_annonce":16.5,"id_annonce":"61253c48c1ff785a96c9a74a","__v":0}
+{"_id":{"$oid":"61253d4dc1ff785a96c9a7a9"},"datetime_clic":{"$date":"2021-08-24T18:41:17.365Z"},"annonceur":"Sony","jeu":"Fortnite","prix_annonce":16.5,"id_annonce":"61253c48c1ff785a96c9a74a","__v":0}
+{"_id":{"$oid":"61253d51c1ff785a96c9a7ab"},"datetime_clic":{"$date":"2021-08-24T18:41:21.032Z"},"__v":0}
+{"_id":{"$oid":"61253d54c1ff785a96c9a7b0"},"datetime_clic":{"$date":"2021-08-24T18:41:24.059Z"},"annonceur":"Sony","jeu":"Assassin&#39;s Creed","prix_annonce":16.5,"id_annonce":"61253c48c1ff785a96c9a74a","__v":0}
+{"_id":{"$oid":"61253d57c1ff785a96c9a7b2"},"datetime_clic":{"$date":"2021-08-24T18:41:27.569Z"},"__v":0}
+{"_id":{"$oid":"61253d5ac1ff785a96c9a7b7"},"datetime_clic":{"$date":"2021-08-24T18:41:30.543Z"},"annonceur":"Adidas","jeu":"Sonic the Hedgehog","prix_annonce":18.700000000000003,"id_annonce":"61253caac1ff785a96c9a756","__v":0}
+{"_id":{"$oid":"61253d5ec1ff785a96c9a7b9"},"datetime_clic":{"$date":"2021-08-24T18:41:34.414Z"},"__v":0}
+{"_id":{"$oid":"61253d60c1ff785a96c9a7be"},"datetime_clic":{"$date":"2021-08-24T18:41:36.832Z"},"annonceur":"Adidas","jeu":"Street Fighter","prix_annonce":18.700000000000003,"id_annonce":"61253caac1ff785a96c9a756","__v":0}
+{"_id":{"$oid":"61253d63c1ff785a96c9a7c0"},"datetime_clic":{"$date":"2021-08-24T18:41:39.062Z"},"annonceur":"Adidas","jeu":"Street Fighter","prix_annonce":18.700000000000003,"id_annonce":"61253caac1ff785a96c9a756","__v":0}
