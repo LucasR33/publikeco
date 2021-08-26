@@ -1,0 +1,36 @@
+<% include ./../partials/template %>
+  <body>
+      <% include ./../partials/header %>
+      <% include ./../partials/nav %>
+    <main role="main">
+        <section class="panel important">
+            <h2>Data visualisation</h2>
+            <div class="form-group">
+                <div>
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th scope="col">Nombre d'annonce</th>
+                            <th scope="col">Valeur de l'annonce</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                            <% Object.entries(data).forEach(([key, value])=> { %>
+                                <tr>
+                                    <td><%= value %></td>
+                                    <td><%= key %></td>
+                                </tr>
+                            <% }) %>
+                        </tbody>
+                    </table>
+                </div>
+                <div>
+                    <a href="powerbi">
+                        <button type="submit" id="data" name="submit" label="Retour" class="btn btn-primary">Retour</button>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+  </body>
+</html>

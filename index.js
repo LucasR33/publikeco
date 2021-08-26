@@ -45,6 +45,7 @@ require('./routes/enchere.routes.js')(app);
 require('./routes/jeux.routes.js')(app);
 require('./routes/joueur.routes.js')(app);
 require('./routes/tableauBord.routes.js')(app);
+require('./routes/tableauBord.routes')(app);
 //require('./routes/tag.routes.js')(app);
 
 
