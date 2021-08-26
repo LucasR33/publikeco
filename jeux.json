@@ -1,0 +1,6 @@
+{"_id":{"$oid":"61253b4fc1ff785a96c9a719"},"nom_jeu":"Call Of Duty","id_tags":"FPS, Guerre","id_editeur":"Activision","emplacements_annonces":2,"valide":true,"__v":0}
+{"_id":{"$oid":"61253b5dc1ff785a96c9a71d"},"nom_jeu":"Sims","id_tags":"Life, gestion","id_editeur":"Electronic","emplacements_annonces":2,"valide":true,"__v":0}
+{"_id":{"$oid":"61253b70c1ff785a96c9a721"},"nom_jeu":"Fortnite","id_tags":"TPS, Battle Royal","id_editeur":"Epic","emplacements_annonces":2,"valide":true,"__v":0}
+{"_id":{"$oid":"61253b90c1ff785a96c9a725"},"nom_jeu":"Assassin's Creed","id_tags":"Histoire, Guerre","id_editeur":"Ubisoft","emplacements_annonces":2,"valide":true,"__v":0}
+{"_id":{"$oid":"61253ba8c1ff785a96c9a729"},"nom_jeu":"Sonic the Hedgehog","id_tags":"Platforme, Animaux","id_editeur":"Sega","emplacements_annonces":2,"valide":true,"__v":0}
+{"_id":{"$oid":"61253bc1c1ff785a96c9a72d"},"nom_jeu":"Street Fighter","id_tags":"Combat","id_editeur":"Capcom","emplacements_annonces":2,"valide":true,"__v":0}

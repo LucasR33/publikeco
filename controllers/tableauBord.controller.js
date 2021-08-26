@@ -28,7 +28,6 @@ exports.allWonEnchere = (req, res) => {
     enchere.mapReduce(o, function (err, results) {
         if(err) throw err;
         var data = results.results;
-        console.log(data)
         res.render('dataViz/wonEnchere', {data:data});
     });
 }

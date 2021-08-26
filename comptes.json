@@ -1,0 +1,14 @@
+{"_id":{"$oid":"61253a56c1ff785a96c9a6ed"},"nom":"Activision","prenom":"","mdp":"azerty","email":"bliz@zard.fr","type":"Editeur","__v":0}
+{"_id":{"$oid":"61253a68c1ff785a96c9a6f0"},"nom":"Electronic Arts","prenom":"","mdp":"azert","email":"electronic@arts.fr","type":"Editeur","__v":0}
+{"_id":{"$oid":"61253a78c1ff785a96c9a6f3"},"nom":"Epic Games","prenom":"","mdp":"azerty","email":"epic@games.fr","type":"Editeur","__v":0}
+{"_id":{"$oid":"61253a87c1ff785a96c9a6f6"},"nom":"Ubisoft","prenom":"","mdp":"azerty","email":"ubi@soft.fr","type":"Editeur","__v":0}
+{"_id":{"$oid":"61253a94c1ff785a96c9a6f9"},"nom":"Sega","prenom":"","mdp":"azerty","email":"se@ga.fr","type":"Editeur","__v":0}
+{"_id":{"$oid":"61253aa0c1ff785a96c9a6fc"},"nom":"Capcom","prenom":"","mdp":"azerty","email":"cap@com.fr","type":"Editeur","__v":0}
+{"_id":{"$oid":"61253ab3c1ff785a96c9a6ff"},"nom":"MSI","prenom":"","mdp":"azerty","email":"ms@i.fr","type":"Annonceur","__v":0}
+{"_id":{"$oid":"61253ac3c1ff785a96c9a702"},"nom":"BenQ","prenom":"","mdp":"azerty","email":"be@nq.fr","type":"Annonceur","__v":0}
+{"_id":{"$oid":"61253ad4c1ff785a96c9a705"},"nom":"Apple","prenom":"","mdp":"azerty","email":"app@le.fr","type":"Annonceur","__v":0}
+{"_id":{"$oid":"61253ae2c1ff785a96c9a708"},"nom":"Sony","prenom":"","mdp":"azerty","email":"so@ny.fr","type":"Annonceur","__v":0}
+{"_id":{"$oid":"61253af7c1ff785a96c9a70b"},"nom":"Xiaomi","prenom":"","mdp":"azerty","email":"xia@omi.fr","type":"Annonceur","__v":0}
+{"_id":{"$oid":"61253b18c1ff785a96c9a70e"},"nom":"Scott","prenom":"","mdp":"azerty","email":"sc@ott.fr","type":"Annonceur","__v":0}
+{"_id":{"$oid":"61253b2ec1ff785a96c9a711"},"nom":"Adidas","prenom":"","mdp":"azerty","email":"adi@das.fr","type":"Annonceur","__v":0}
+{"_id":{"$oid":"61253b39c1ff785a96c9a714"},"nom":"Puma","prenom":"","mdp":"azerty","email":"pu@ma.fr","type":"Annonceur","__v":0}
