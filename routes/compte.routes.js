@@ -12,6 +12,7 @@ module.exports = (app) => {
         compte.create
     );
 
+
     app.get('/compte/addCompte', compte.addCompte);
 
     app.get('/compte/listCompte', compte.findAll);
