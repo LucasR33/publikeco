@@ -27,8 +27,9 @@ exports.allWonEnchere = (req, res) => {
 
     enchere.mapReduce(o, function (err, results) {
         if(err) throw err;
-        res.json(results)
-        console.log(results)
+        var data = results.results;
+        console.log(data)
+        res.render('dataViz/wonEnchere', {data:data});
     });
 }
 
@@ -38,9 +39,9 @@ exports.nbEnchereParPrix = (req, res) => {
     annonce.find().then(data => {
         const nbEnchere =  data.reduce((acc, it) => {
             acc[it.prix_max] = acc[it.prix_max] + 1 || 1;
-            console.log(acc)
             return acc;
         }, {});
-        res.json(nbEnchere)
+        console.log(nbEnchere)
+        res.render('dataViz/nbEnchere', {data:nbEnchere});
     })
 }

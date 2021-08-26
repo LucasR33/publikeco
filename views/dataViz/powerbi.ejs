@@ -1,19 +1,25 @@
 <% include ./../partials/template %>
-  <body>
+    <body>
       <% include ./../partials/header %>
       <% include ./../partials/nav %>
-    <main role="main">
-        <section class="panel important">
-            <h2>Data visualisation</h2>
-            <div class="form-group">
-            </div>
-        </section>
-    </main>
-  </body>
-  <script>
-      document.getElementById('dlData')
-      .addEventListener('click', function () {
-          var text = "";
-      }, false)
-  </script>
+        <main role="main">
+            <section class="panel important">
+                <h2>Data visualisation</h2>
+                <div class="form-group">
+                    <div>
+                        <a href="enchereWon">
+                        <button type="submit" id="data" name="submit" label="Afficher" class="btn btn-primary">Afficher toutes les annonces gagnantes</button>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="nbEnchere">
+                            <button type="submit" id="data" name="submit" label="Afficher" class="btn btn-primary">Nombre d'enchères par prix</button>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
 </html>
+
+

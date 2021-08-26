@@ -4,6 +4,7 @@
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:200);
 @import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+@import url("https://fonts.googleapis.com/css?family=Oxygen:300,400,700");
 html {
   box-sizing: border-box;
 }
@@ -1343,3 +1344,689 @@ a.genre:hover {
 .footer {
   grid-area: fot;
 }
+
+.services{
+    margin: 20px auto;
+    }
+figure.snip1174 {
+  color: #fff;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  text-align: left;
+  margin: 10px;
+  width: 100%;
+  border-radius: 0px;
+}
+figure.snip1174 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+figure.snip1174 img {
+  max-width: 100%;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  vertical-align: top;
+  opacity: 0.7;
+}
+figure.snip1174 figcaption {
+  position: absolute;
+  padding: 40px 25px;
+  top: 0;
+  left: 0;
+}
+figure.snip1174 h2,
+figure.snip1174 p {
+  margin: 0;
+  padding: 0;
+}
+figure.snip1174 h2 {
+  margin-bottom: 10px;
+  display: inline-block;
+  font-weight: 100;
+  font-size: 1.8em;
+}
+figure.snip1174 p {
+  font-weight: 300;
+  margin-bottom: 20px;
+  line-height: 1.4em;
+}
+figure.snip1174 a {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid #ffffff;
+  text-decoration: none;
+  color: #ffffff;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  -webkit-transform: translateX(50%);
+  transform: translateX(50%);
+  opacity: 0;
+}
+figure.snip1174 a:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+figure.snip1174.blue {
+  background-color: #20638f;
+}
+figure.snip1174.yellow {
+  background-color: #c87f0a;
+}
+figure.snip1174.green {
+  background-color: #1e8449;
+}
+figure.snip1174.navy {
+  background-color: #222f3d;
+}
+figure.snip1174.red {
+  background-color: #962d22;
+}
+figure.snip1174:hover img,
+figure.snip1174.hover img {
+  opacity: 0;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+figure.snip1174:hover a,
+figure.snip1174.hover a {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/*TODO: move .bva2_0 to BODY*/
+
+BODY.bva2_0 {
+  background: #F8F8F8;
+}
+
+.bva2_0 [class*="icon-"] {
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+
+.bva2_0 .vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.bva2_0 .center-container {
+  position: relative;
+  margin: 0 auto;
+  box-sizing: border-box;
+  font-family: arial, sans-serif;
+  font-size: 12px;
+}
+
+.w960 {
+  width: 960px;
+}
+
+.w1020 {
+  width: 1020px;
+}
+
+.w1170 {
+  width: 1170px;
+}
+
+
+/*--[START]-show-more-lots-----  */
+
+.show-more-lots {
+  text-align: center;
+  padding: 40px 0 70px;
+}
+
+.show-more-lots a {
+  padding: 10px 50px;
+  background-color: #208BEB;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.show-more-lots a:hover {
+  background-color: #0968AE;
+}
+
+
+/*--[END]-show-more-lots-----  */
+
+
+/*--[START]-banner-ads-container---------------*/
+
+
+/*FIXME: make generic container and combine with the one of the footer*/
+
+
+/*CHANGED*/
+
+
+/* .bva2_0 .banner-ads .container {
+
+} */
+
+
+/*CHANGED*/
+
+.bva2_0 .banner-ads .center-container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+
+/*--[END]-banner-ads-container---------------*/
+
+
+/*--[START]-footer---------------*/
+
+
+/*@Massimo: ask Thierry for the icon images to host and update bg url accondenly*/
+
+
+/*icons*/
+
+
+/* .bva2_0 .footer [class*="icon-"] {
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+} */
+
+.bva2_0 .footer .icon-facebook-square {
+  background-image: url('http://fa2png.io/media/icons/brandico-facebook-rect/20/0/ffffff_none.png');
+}
+
+.bva2_0 .footer .icon-youtube-square {
+  background-image: url('http://fa2png.io/media/icons/fa-youtube-square/20/0/ffffff_none.png');
+}
+
+.bva2_0 .footer .icon-twitter-square {
+  background-image: url('http://fa2png.io/media/icons/fa-twitter-square/20/0/ffffff_none.png');
+}
+
+.bva2_0 .footer .icon-linkedin-square {
+  background-image: url('http://fa2png.io/media/icons/brandico-linkedin-rect/20/0/ffffff_none.png');
+}
+
+.bva2_0 .footer .icon-gplus-square {
+  background-image: url('http://fa2png.io/media/icons/fa-google-plus-square/20/0/ffffff_none.png');
+}
+
+.bva2_0 .footer .icon-checkmark-circled {
+  background-image: url('http://fa2png.io/media/icons/ion-checkmark-circled/30/0/78d43a_none.png');
+}
+
+
+/*CHANGED*/
+
+
+/* .bva2_0 .footer .container {
+		position: relative;
+		width: 960px;
+		margin: 0 auto;
+		box-sizing: border-box;
+    font-family: arial, sans-serif;
+    font-size: 12px;
+} */
+
+.bva2_0 .footer H2 {
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+
+
+/*--[START]-@massimo (08-06-2016) Replace for bullet points in custumer service list--*/
+
+
+/* REPLACE THIS */
+
+
+/* .bva2_0 .footer UL {
+		list-style-type: none;
+} */
+
+
+/* WITH THIS */
+
+.bva2_0 .footer UL:not(.customer-service-list) {
+  list-style-type: none;
+}
+
+.bva2_0 .footer UL.customer-service-list {
+  padding-left: 25px;
+}
+
+
+/*--[END]-@massimo (08-06-2016) Replace for bullet points in custumer service list-*/
+
+.bva2_0 .footer UL LI {
+  padding-bottom: 5px;
+}
+
+.bva2_0 .footer .row {
+  width: 100%;
+  display: inline-block;
+}
+
+.bva2_0 .footer .col {
+  float: left;
+  box-sizing: border-box;
+}
+
+.bva2_0 .footer .half {
+  width: 50%;
+}
+
+.bva2_0 .footer .quart {
+  width: 25%;
+}
+
+.bva2_0 .footer .nowrap {
+  white-space: nowrap;
+}
+
+.bva2_0 .footer .col.newsletter,
+.bva2_0 .footer .col.customer-service,
+.bva2_0 .footer .col.how-it-works,
+.bva2_0 .footer .col.what-we-do,
+.bva2_0 .footer .col.about-us,
+.bva2_0 .footer .col.follow-us {
+  padding-top: 40px;
+}
+
+.bva2_0 .footer .newsletter > P {
+  padding-right: 85px;
+}
+
+.bva2_0 .footer .newsletter INPUT {
+  width: 270px;
+  height: 30px;
+  border: 0;
+  margin: 0;
+  margin-right: 20px;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+
+.bva2_0 .footer .newsletter BUTTON {
+  padding: 8px 12px;
+  background-color: #F60;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+}
+
+.bva2_0 .footer .newsletter .error {
+  padding-top: 5px;
+  display: block;
+  color: #e60000;
+}
+
+.bva2_0 .footer .confirmation {
+  width: 75%;
+}
+
+.bva2_0 .footer .confirmation .icon-checkmark-circled {
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+  float: left;
+}
+
+.bva2_0 .footer .customer-service A {
+  text-decoration: underline;
+}
+
+.bva2_0 .footer .newsletter BUTTON:hover {
+  background-color: #E15A00;
+}
+
+.bva2_0 .footer .follow-us .row:first-child {
+  margin-bottom: 30px;
+}
+
+.bva2_0 .footer .follow-us LI {
+  float: left;
+  margin-right: 20px;
+}
+
+.bva2_0 .footer .main {
+  background-color: #9B9B9B;
+  color: #fff;
+}
+
+.bva2_0 .footer .main .center-container {
+  padding-bottom: 50px;
+}
+
+.bva2_0 .footer .main H2 {
+  color: #fff;
+}
+
+.bva2_0 .footer .main A {
+  color: #fff;
+}
+
+.bva2_0 .footer .main A:hover {
+  text-decoration: underline;
+}
+
+.bva2_0 .footer .main P {
+  margin-bottom: 15px;
+}
+
+.bva2_0 .footer .main .row:first-child {
+  margin-bottom: 20px;
+}
+
+.bva2_0 .footer .main .tel {
+  margin-bottom: 0;
+}
+
+.bva2_0 .trustmark {
+  margin-left: 10px;
+  margin-top: 34px;
+}
+
+.bva2_0 .trustmark IMG {
+  width: 66px;
+  height: 66px;
+}
+
+.bva2_0 .footer .partners {
+  background-color: #fff;
+}
+
+.bva2_0 .footer .partners .row {
+  padding: 20px 0;
+}
+
+.bva2_0 .footer .partners H2 {
+  color: #666;
+}
+
+.bva2_0 .footer .partners LI {
+  float: left;
+  margin-right: 30px;
+}
+
+.bva2_0 .footer .partners IMG {
+  width: 105px;
+  height: 50px;
+}
+
+.bva2_0 .footer .secondary {
+  background-color: #F8F8F8;
+}
+
+.bva2_0 .footer .secondary .center-container {
+  padding: 30px;
+}
+
+.bva2_0 .footer .secondary P {
+  text-align: center;
+  color: #666;
+}
+
+.bva2_0 .footer .secondary A {
+  margin: 0 12px;
+  color: #a6a6a6;
+}
+
+.bva2_0 .footer .secondary A:hover {
+  text-decoration: underline;
+}
+
+.bva2_0 .footer .secondary P:first-child {
+  margin-bottom: 20px;
+}
+
+.bva2_0 .footer .customer-feedback iframe {
+  margin-left: -27px;
+  margin-right: -27px;
+}
+
+
+/*--[END]-footer--------------*/
+
+
+/*--[START]-auction-card --------------*/
+
+.bva2_0 .auction-cards-row .icon-lot {
+  background: url("http://i.hmp.me/m/18c3a2208ddc68667a40d86f92622ed1.png") no-repeat;
+  width: 14px;
+}
+
+.bva2_0 .auction-cards-row .icon-pin {
+  background: url("http://i.hmp.me/m/aefc1808930e7ec538bb6379efe60405.png") no-repeat;
+  width: 10px;
+}
+
+.bva2_0 .auction-cards-row .icon-clock {
+  background: url("http://i.hmp.me/m/d57ea69e710ea1efff45bc28b67a77d8.png") no-repeat;
+  width: 14px;
+}
+
+.bva2_0 .auction-cards-row .icon-closing {
+  background: url("https://www.bva-auctions.com/res/img/20/branding/closing_icon.png") no-repeat;
+  width: 14px;
+}
+
+.bva2_0 .auction-cards-row [class*="icon-"] {
+  height: 14px;
+  vertical-align: middle;
+  margin-bottom: 3px;
+  margin-right: 4px;
+}
+
+.bva2_0 .auction-cards-row {
+  overflow: auto;
+  /*  [END] 15-07 */
+  padding-bottom: 50px;
+  /*  [START] 15-07 */
+}
+
+.bva2_0 .auction-cards-row ul {
+  list-style: none;
+  padding: 0;
+}
+
+.bva2_0 .auction-card {
+  position: relative;
+  float: left;
+  overflow: hidden;
+  box-sizing: border-box;
+  /* [START] change 15-07  */
+  margin: 5px;
+  /* [END] change 15-07  */
+  width: 228px;
+  border: solid 1px #e2e2e2;
+  background: #fff;
+}
+
+.bva2_0 .auction-card:hover {
+  border: solid 1px #CBCBCB;
+}
+
+.bva2_0 .auction-cards-row li:nth-of-type(1) .auction-card {
+  margin-left: 0;
+}
+
+.bva2_0 .auction-cards-row li:nth-of-type(4) .auction-card {
+  margin-right: 0;
+}
+
+.bva2_0 .auction-cards-row h2 {
+  display: inline-block;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 10px 0 20px;;
+  font-weight: normal;
+  color: #333;
+}
+
+.bva2_0 .auctionlist .all-auctions-link.more {
+  background: none;
+  color: #208beb;
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+}
+
+.bva2_0 .auction-card a {
+  color: #000;
+  text-decoration: none;
+}
+
+
+/* START 13-07 @massimo insert these rules */
+.bva2_0 .auction-card .location {
+  display: table-cell;
+  vertical-align: middle;
+  height: 100%;
+  width: 80%;
+  line-height: normal;
+  padding: 0 5px;
+}
+
+.bva2_0 .auction-card .location span {
+    width: 100%;
+    display: block;
+    -ms-word-break: break-all;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+/* END 13-07 @massimo insert these rules */
+
+.bva2_0 .auction-card .status.closing {
+  color: #FF6600;
+}
+
+.bva2_0 .auction-card .location.online {
+  color: #009900;
+}
+
+.bva2_0 .auction-card .collage {
+  box-sizing: border-box;
+  height: 170px;
+  background: #e2e2e2;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.bva2_0 .auction-card .collage IMG {
+  width: 100%;
+  height: 100%;
+  float: left;
+  position: relative;
+}
+
+.bva2_0 .auction-card .collage IMG:nth-of-type(2n+1) {
+  right: 1px;
+}
+
+.bva2_0 .auction-card .collage IMG:nth-of-type(-n+2) {
+  bottom: 1px;
+}
+
+.bva2_0 .cta {
+  width: 100%;
+}
+
+.bva2_0 .cta_btn {
+  display: inline-block;
+  padding: 10px 0;
+  width: 100%;
+  background-color: #0968AE;
+  color: white;
+  text-align: center;
+  -webkit-transition: all 0s ease-in-out;
+  -moz-transition: all 0s ease-in-out;
+  transition: all 0s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.bva2_0 .auction-card:hover .cta_btn {
+  background: #065086;
+  cursor: pointer;
+}
+
+.bva2_0 .auction-card .title {
+  overflow: hidden;
+  height: 55px;
+  color: #333;
+  font-size: 16px;
+  width: 100%;
+  display: table;
+}
+
+.bva2_0 .auction-card .title SPAN {
+  text-align: center;
+  padding: 0 16px;
+  display: table-cell;
+  vertical-align: middle;
+  /* START 13-07 @massimo insert these declerations */
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-wrap: break-word;
+  /* END 13-07 @massimo insert these declerations */
+}
+
+.bva2_0 .auction-card .details {
+  overflow: hidden;
+  line-height: 40px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.bva2_0 .auction-card .details .details_col {
+  float: left;
+  text-align: center;
+  box-sizing: border-box;
+  max-height: 40px;
+  width: 50%;
+  height: 40px;
+  border: dashed 1px #E2E2E2;
+  border-bottom: 0;
+  border-left: 0;
+  /* START 13-07 @massimo insert these declerations */
+  display: table;
+  /* END 13-07 @massimo insert these declerations */
+}
+
+.bva2_0 .auction-card .details .details_col.full-width {
+  width: 100%;
+  border-right: 0;
+}
+
+.bva2_0 .auction-card .details .details_col.last {
+  border-right: 0;
+}
+
+
+/*--[END]-auction-card --------------*/
+
+#btnadd {
+  float: right;
+  margin-top: -35px;
+  margin-bottom: 10px;
+
+}
+/*___________________________________________________________________________________________________________________*/

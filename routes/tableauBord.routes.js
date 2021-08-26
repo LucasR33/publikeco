@@ -5,4 +5,8 @@ module.exports = (app) => {
     app.get('/dataViz/powerbi', tableauBord.index);
 
     app.get('/dataViz/test', tableauBord.nbEnchereParPrix);
+
+    app.get('/dataViz/enchereWon', tableauBord.allWonEnchere);
+
+    app.get('/dataViz/nbEnchere', tableauBord.nbEnchereParPrix);
 }

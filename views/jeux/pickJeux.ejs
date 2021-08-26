@@ -3,19 +3,29 @@
       <% include ./../partials/header %>
       <% include ./../partials/nav %>
     <main role="main">
-            <h2>Jeux</h2>
-            <form action="clickJeux" method="POST">
-                <div class="col-md-12">
-                    <div class="info">
-                        <select class="floatLabel" id="game" name="game">
-                        <% data.forEach(element => { %>
-                        <option value=<%=element._id%>><%=element.nom_jeu%></option>
-                        <% }) %>
-                    </select> 
-                    <button type="submit" name="submit" label="Jouer" class="btn btn-primary">Jouer</button>
-                    </div>
-                 </div>
-            </form>
+      <section class="panel important">
+          <h2>Jeux</h2>
+      </section>
+
+<div class="services">
+    <% data.forEach(element => { %>
+<div class="col-md-4">
+    <figure class="snip1174 navy col-md-4">
+      <img src="/public/img/games.jpg" alt="sq-sample33" />
+      <figcaption>
+        <h2><%=element.nom_jeu%></h2>
+        <p>
+          Jeux PC
+        </p>
+        <form action="clickJeux" method="POST">
+          <input type="hidden" name="" value="<%=element._id%>">
+          <button type="submit" name="submit" label="Jouer" class="btn btn-primary">Jouer</button>
+        </form>
+      </figcaption>
+    </figure>
+</div>
+  <% }) %>
+</div>
     </main>
   </body>
 </html>
