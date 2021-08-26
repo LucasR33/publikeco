@@ -22,13 +22,14 @@
                   <div class="form-group">
                     <div class="controls">
                     <label for="fruit">Annonce</label>
-                    <select class="floatLabel" id="libelle" name="libelle" multiple="multiple">
-                        <% annonces.forEach(elem => { %>
-                        <option value=<%=elem._id%>><%=elem.id_annonceur%> - <%=elem.libelle%></option>
-                        <% }) %>
-                    </select>
+                    <select name="libelle" id="select2-multiple-input-sm" class="form-control input-sm select2-multiple floatLabel" multiple>
+                      <% annonces.forEach(elem => { %>
+                      <option value=<%=elem._id%>><%=elem.id_annonceur%> - <%=elem.libelle%></option>
+                      <% }) %>
+                   </select>
                     </div>
                   </div>
+
                   <div class="form-group">
                     <div class="controls">
                     <label for="fruit">Emplacement annonce</label>
@@ -39,7 +40,7 @@
                     </div>
                   </div>
                   <div>
-                    <button type="submit" name="submit" value="Ajouter">Ajouter</button>
+                    <button class="btn btn-primary" type="submit" name="submit" value="Ajouter">Ajouter</button>
                   </div>
                 </form>
               </li>
@@ -48,3 +49,10 @@
     </main>
   </body>
 </html>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.2/js/select2.full.min.js'></script><script type="text/javascript">
+  $( ".select2-multiple" ).select2({
+    theme: "bootstrap",
+  	placeholder: "Selectionnez une ou plusieurs annonces",
+    containerCssClass: ':all:'
+  });
+</script>
