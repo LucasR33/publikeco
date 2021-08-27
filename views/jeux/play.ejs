@@ -14,15 +14,25 @@
     <% include ./../partials/nav %>
     <main role="main">
         <section class="panel important">
-            <h2>Jeu</h2>
+         <h2>Jeu</h2>
 
                   <div class="container">
-<div class="nav" >
-    <button type="button" id="pub1"></button>
+<div class="nav d-flex align-items-center" >
+  <button class="cybr-btn" id="pub1">
+  <span id="libelle">Annonce 1</span><span aria-hidden>_</span>
+  <span aria-hidden class="cybr-btn__glitch">cliquez</span>
+  <span aria-hidden class="cybr-btn__tag">R25</span>
+</button>
+  <!--  <button type="button" id="pub1"></button>-->
 </div>
 <div class="main-content" onclick="displayAnnonce()">Cliquez pour jouer</div>
-<div class="advertising" id="pub2">
-    <button type="button" id="pub2"></button>
+<div class="advertising d-flex align-items-center">
+  <button class="cybr-btn" id="pub2">
+      <span id="libelle">Annonce 2</span><span aria-hidden>_</span>
+    <span aria-hidden class="cybr-btn__glitch">cliquez</span>
+    <span aria-hidden class="cybr-btn__tag">R25</span>
+  </button>
+
 </div>
 </div>
         </section>
@@ -38,10 +48,10 @@
     var game_name = "<%= game.nom_jeu %>";
     function displayAnnonce() {
         setTimeout(function() {
-            document.getElementById('pub1').innerHTML = libelle;
+            document.getElementById('libelle').innerHTML = libelle;
         }, 1000);
         setTimeout(function() {
-            document.getElementById('pub2').innerHTML = libelle;
+            document.getElementById('libelle').innerHTML = libelle;
         }, 5000);
 
     }
