@@ -6,12 +6,7 @@ var ObjectId = require('mongodb').ObjectID;
 const clickRoutes = require('../routes/click.routes');
 
 exports.clickJeux = (req, res) => {
-    console.log(req.body.game)
-    const newClick = new click({
-        jeux : req.body.game,
-        datetime_clic : new Date()
-        });
-        newClick.save().then(data => res.redirect('play/'+req.body.game));
+    res.redirect('play/'+req.body.game);
 };
 
 exports.play = (req, res) => {
