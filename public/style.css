@@ -15,6 +15,10 @@ html {
   box-sizing: inherit;
 }
 
+.img11 {
+  height : inherit;
+}
+
 body {
   background: #f1f2f7;
   font-family: "Open Sans", arial, sans-serif;
