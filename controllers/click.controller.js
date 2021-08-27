@@ -33,7 +33,7 @@ exports.play = (req, res) => {
                       });
                     var winningBid = prixMax.indexOf(wonBid);
                     var lenPrixMax = prixMax.length;
-                    var secondWinner = prixMax[lenPrixMax-1];
+                    var secondWinner = prixMax[lenPrixMax-2];
                     var firstWinner = prixMax[lenPrixMax];
 
                     var winningPrice = secondWinner * 1.10;
@@ -42,7 +42,6 @@ exports.play = (req, res) => {
                     var description =  annonces[winningBid].description
                     var id_annonceur = annonces[winningBid].id_annonceur
                     var enchId = enchere[0]._id
-                    console.log(enchId)
                     encheres.findByIdAndUpdate(ObjectId(enchId), { annonceur_vainqueur : annonces[winningBid], prix_vainqueur :  winningPrice, done: true}, function (err, result){
                         if(err){
                             console.log(err)

@@ -5,8 +5,6 @@ const enchere = require('../models/enchere.model');
 const jeux = require('../models/jeux.model');
 const { emit } = require('../models/annonce.model');
 
-
-
 exports.index = (req, res) => {
     res.render('dataViz/powerbi');
 }
@@ -19,12 +17,10 @@ exports.allWonEnchere = (req, res) => {
         if(this.prix_vainqueur > 0 && this.done === true){
             emit({annonceur: this.annonceur_vainqueur.id_annonceur, prix: this.prix_vainqueur}, 1)
         }
-        
     };
     o.reduce = function (k, vals) {
         return vals.length
     };
-
     enchere.mapReduce(o, function (err, results) {
         if(err) throw err;
         var data = results.results;
@@ -40,7 +36,6 @@ exports.nbEnchereParPrix = (req, res) => {
             acc[it.prix_max] = acc[it.prix_max] + 1 || 1;
             return acc;
         }, {});
-        console.log(nbEnchere)
         res.render('dataViz/nbEnchere', {data:nbEnchere});
     })
 }
