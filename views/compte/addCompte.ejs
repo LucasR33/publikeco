@@ -35,7 +35,7 @@
                                         </div>
                                         <div class="controls">
                                             <label for="email">Mot de passe</label>
-                                            <input type="text" name="mdp" id="mdp">
+                                            <input type="password" name="mdp" id="mdp">
                                             <% if (errors !== undefined && errors.find(error => error.param == "mdp") !== undefined) { %>
                                                 <p class="text-danger">Le mot de passe doit contenir au moins 6 caractères dont une minuscule, une majuscule et un chiffre</p>
                                                 <% }; %>
