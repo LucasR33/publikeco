@@ -1,167 +1,156 @@
 <% include ./partials/template %>
-<link id="pagestyle" href="./../public/soft-ui-dashboard.css?v=1.0.3" rel="stylesheet" />
+    <link id="pagestyle" href="./../public/soft-ui-dashboard.css?v=1.0.3" rel="stylesheet" />
 
-  <body>
-      <% include ./partials/header %>
-      <% include ./partials/nav %>
-    <main role="main">
-      <section class="panel important">
-          <h2>Bienvenue sur Publikeco</h2>
-      </section><br>
-      <main class="main-content position-relative max-height-vh-100 h-100 mt-1 border-radius-lg ">
-        <div class="container-fluid py-4">
-          <div class="row">
-            <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
-              <div class="card">
-                <div class="card-body p-3">
-                  <div class="row">
-                    <div class="col-8">
-                      <div class="numbers" >
-                        <p  id="cssSize" class="text-lg mb-0 text-capitalize font-weight-bold">Enchères</p>
-                        <h5 id="cssSize" class="font-weight-bolder mb-0">
-                          18
-                          <span class="text-success text-sm font-weight-bolder"></span>
-                        </h5>
-                      </div>
-                    </div>
-                    <div class="col-4 text-end">
-                      <div class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
-                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-width="35" height="35"
-viewBox="0 0 172 172"
-style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M91.62136,11.41068c-1.48951,0.04438 -2.90324,0.6669 -3.94167,1.73568l-34.4,34.4c-1.49776,1.43802 -2.10108,3.57339 -1.5773,5.58258c0.52378,2.00919 2.09283,3.57823 4.10201,4.10201c2.00919,0.52378 4.14456,-0.07954 5.58258,-1.5773l34.4,-34.4c1.69569,-1.64828 2.20555,-4.16851 1.28389,-6.3463c-0.92166,-2.17779 -3.08576,-3.56638 -5.44951,-3.49667zM103.2,28.66667c-1.53699,0.00016 -3.00955,0.61742 -4.08724,1.71328l-28.43151,28.45391c-1.1945,1.08355 -1.8774,2.62008 -1.88125,4.23281c-0.00177,1.69226 0.74415,3.29887 2.03802,4.38958l33.99687,34.01927c1.07855,1.10275 2.55594,1.72438 4.09844,1.72448c1.52598,-0.00022 2.98891,-0.60877 4.06484,-1.69089l28.59948,-28.59948c1.10964,-1.07938 1.73565,-2.56161 1.73567,-4.10964c-0.00016,-1.53699 -0.61742,-3.00955 -1.71328,-4.08724l-34.31042,-34.31041c-0.02221,-0.02258 -0.04461,-0.04498 -0.06719,-0.06719c-1.07411,-1.06842 -2.52744,-1.66827 -4.04245,-1.66849zM154.68802,74.47734c-1.48951,0.04438 -2.90324,0.66691 -3.94167,1.73568l-34.4,34.4c-1.49778,1.43802 -2.10113,3.5734 -1.57735,5.5826c0.52378,2.0092 2.09284,3.57826 4.10204,4.10204c2.0092,0.52378 4.14458,-0.07957 5.5826,-1.57735l34.4,-34.4c1.69569,-1.64828 2.20555,-4.16851 1.28389,-6.3463c-0.92166,-2.17779 -3.08576,-3.56638 -5.44952,-3.49667zM76.21302,87.67969l-54.58985,46.61692c-2.78774,2.17004 -4.41957,5.50394 -4.42318,9.03672c0,6.33287 5.1338,11.46667 11.46667,11.46667c3.46111,-0.00048 6.73683,-1.56426 8.91354,-4.25521c0.01875,-0.02232 0.03741,-0.04472 0.05599,-0.06718l0.0112,-0.0112l46.67292,-54.67943z"></path></g></g></svg>                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
-              <div class="card">
-                <div class="card-body p-3">
-                  <div class="row">
-                    <div class="col-8">
-                      <div class="numbers">
-                        <p class="text-lg mb-0 text-capitalize font-weight-bold">Annonces</p>
-                        <h5 class="font-weight-bolder mb-0">
-                          4
-                          <span class="text-success text-sm font-weight-bolder"></span>
-                        </h5>
-                      </div>
-                    </div>
-                    <div class="col-4 text-end">
-                      <div class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
-                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-width="35" height="35"
-viewBox="0 0 172 172"
-style=" fill:#000000;"><g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(0.33594,0.33594)"><path d="M59.44727,59c-20.648,0 -37.44727,17.04297 -37.44727,38.54297v316.91406c0,21.5 16.79927,38.54297 37.44727,38.54297h393.10156c20.652,0 37.45117,-17.04297 37.45117,-38.54297v-252.10742v-0.07617v-0.07813v-64.65234c0,-21.5 -16.79917,-38.54297 -37.45117,-38.54297zM59.44727,71h393.10156c14.032,0 25.45117,11.66097 25.45117,26.54297v58.45703h-444v-58.45703c0,-14.882 11.41527,-26.54297 25.44727,-26.54297zM75.17188,86.04492c-14.866,0 -26.9668,12.55419 -26.9668,27.99219c0,15.438 12.0948,27.99414 26.9668,27.99414c14.869,0 26.9668,-12.55814 26.9668,-27.99414c0,-15.436 -12.1008,-27.99219 -26.9668,-27.99219zM143.31055,86.04492c-14.866,0 -26.9668,12.55419 -26.9668,27.99219c0,15.438 12.0978,27.99414 26.9668,27.99414c14.869,0 26.96484,-12.55814 26.96484,-27.99414c0,-15.436 -12.09884,-27.99219 -26.96484,-27.99219zM211.44727,86.04492c-14.866,0 -26.96485,12.55419 -26.96485,27.99219c0,15.438 12.09585,27.99414 26.96485,27.99414c14.869,0 26.96679,-12.55814 26.96679,-27.99414c0,-15.436 -12.10079,-27.99219 -26.96679,-27.99219zM75.17188,98.04492c8.252,0 14.9668,7.17319 14.9668,15.99219c0,8.819 -6.7148,15.99414 -14.9668,15.99414c-8.252,0 -14.9668,-7.17514 -14.9668,-15.99414c0,-8.819 6.7148,-15.99219 14.9668,-15.99219zM143.31055,98.04492c8.252,0 14.96484,7.17319 14.96484,15.99219c0,8.819 -6.71284,15.99414 -14.96484,15.99414c-8.252,0 -14.9668,-7.17514 -14.9668,-15.99414c0,-8.819 6.7148,-15.99219 14.9668,-15.99219zM211.44727,98.04492c8.252,0 14.96679,7.17319 14.96679,15.99219c0,8.819 -6.71479,15.99414 -14.96679,15.99414c-8.252,0 -14.96485,-7.17514 -14.96485,-15.99414c0,-8.819 6.71685,-15.99219 14.96485,-15.99219zM34,168h444v246.45703c0,14.882 -11.41917,26.54297 -25.45117,26.54297h-393.10156c-14.032,0 -25.44727,-11.66097 -25.44727,-26.54297zM283.95117,208.18164c-0.77107,-0.02101 -1.53933,0.10151 -2.26562,0.36133l-112.39649,39.45703h-57.32226c-4.00656,-0.01688 -7.85123,1.57987 -10.66699,4.43018c-2.81577,2.85031 -4.36553,6.71416 -4.29981,10.72021v56.36523c0,6.80001 4,12.57555 10,14.56055v57.79492c0.12104,3.39181 2.88555,6.09011 6.2793,6.12891h32.30859c2.65542,0.01196 5.00022,-1.72973 5.75586,-4.27539l17.33398,-58.72461h0.61133l112.28516,39.28906c0.64082,0.20894 1.31251,0.30735 1.98633,0.29102c1.31426,-0.00614 2.59781,-0.398 3.6914,-1.12696c1.64371,-1.11112 2.66327,-2.93575 2.74805,-4.91796v-42.09961l20.30078,-2.24805c12.43897,-1.37463 21.81652,-11.94483 21.69922,-24.45898v-19.2754c0.11381,-12.51174 -9.26273,-23.07827 -21.69922,-24.45312l-20.30078,-2.25195v-39.61914c-0.1435,-3.26245 -2.78442,-5.85903 -6.04883,-5.94727zM278,222.58984v137.48243l-102,-35.50977v-66.46289zM391.32617,241.99414c-0.49962,0.00256 -0.99696,0.06752 -1.48047,0.19336l-39,10c-2.92852,0.74982 -4.84186,3.56119 -4.46495,6.56059c0.37691,2.99939 2.92635,5.24997 5.94933,5.25191c0.50402,-0.00026 1.00601,-0.06391 1.49414,-0.18945l39,-10c2.93888,-0.74409 4.86098,-3.56355 4.47969,-6.57109c-0.38129,-3.00754 -2.94615,-5.25815 -5.97774,-5.24532zM111.9668,260h52.0332v63h-52.0332c-1.82,0 -2.9668,-1.66438 -2.9668,-3.48438v-56.36523c-0.06937,-0.82272 0.21438,-1.63614 0.78042,-2.23721c0.56604,-0.60107 1.36097,-0.93309 2.18638,-0.91318zM290,265.82031l18.99219,2.10547c6.34862,0.71643 11.11372,6.13931 11.00781,12.52734v19.2754c0.10975,6.38982 -4.65704,11.81547 -11.00781,12.52929l-18.99219,2.10352zM356,286c-3.31371,0 -6,2.68629 -6,6c0,3.31371 2.68629,6 6,6h53c3.31371,0 6,-2.68629 6,-6c0,-3.31371 -2.68629,-6 -6,-6zM352.64062,320.01172c-3.0715,-0.14763 -5.75743,2.05076 -6.21983,5.09085c-0.4624,3.04009 1.44842,5.93765 4.42491,6.70993l39,10c3.21016,0.8225 6.47926,-1.11308 7.30176,-4.32324c0.8225,-3.21016 -1.11308,-6.47926 -4.32324,-7.30176l-39,-10c-0.38769,-0.09789 -0.7842,-0.15677 -1.1836,-0.17578zM119,335h37.16602l-15.06641,51h-22.09961z"></path></g></g></svg>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
-              <div class="card">
-                <div class="card-body p-3">
-                  <div class="row">
-                    <div class="col-8">
-                      <div class="numbers">
-                        <p class="text-lg mb-0 text-capitalize font-weight-bold">Jeux</p>
-                        <h5 class="font-weight-bolder mb-0">
-                          5
-                          <span class="text-danger text-sm font-weight-bolder"></span>
-                        </h5>
-                      </div>
-                    </div>
-                    <div class="col-4 text-end">
-                      <div class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
-                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-    width="35" height="35"
-    viewBox="0 0 172 172"
-    style=" fill:#000000;"><g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(3.44,3.44)"><path d="M43.90625,0.96875c-0.04297,0.00781 -0.08594,0.01953 -0.125,0.03125c-0.46484,0.10547 -0.79297,0.52344 -0.78125,1c0,1.89844 -0.87891,2.94141 -2.5,3.96875c-1.62109,1.02734 -3.96484,1.85938 -6.375,2.875c-2.41016,1.01563 -4.90625,2.23828 -6.84375,4.28125c-1.76172,1.85938 -2.98437,4.41406 -3.1875,7.84375c-1.80078,-0.14844 -2.92187,-0.72656 -4.125,-1.34375c-1.46875,-0.75391 -3.14844,-1.625 -5.96875,-1.625c-6.01953,0 -14,13.68359 -14,24c0,4.71094 2.46875,8 6,8c5.30469,0 8.90625,-2.87891 12.09375,-5.40625c2.4375,-1.93359 4.55859,-3.59375 6.90625,-3.59375c2.34766,0 4.46875,1.66016 6.90625,3.59375c3.1875,2.52734 6.78906,5.40625 12.09375,5.40625c3.53125,0 6,-3.28906 6,-8c0,-10.31641 -7.98047,-24 -14,-24c-2.82031,0 -4.5,0.87109 -5.96875,1.625c-1.15234,0.59375 -2.23437,1.13672 -3.90625,1.3125c0.19531,-2.94141 1.17578,-4.91016 2.625,-6.4375c1.61719,-1.70703 3.82813,-2.85937 6.15625,-3.84375c2.32813,-0.98437 4.72266,-1.77734 6.65625,-3c1.93359,-1.22266 3.4375,-3.05469 3.4375,-5.65625c0.01172,-0.28906 -0.10547,-0.56641 -0.3125,-0.76172c-0.21094,-0.19922 -0.49609,-0.29687 -0.78125,-0.26953zM37,27c1.10547,0 2,0.89453 2,2c0,1.10547 -0.89453,2 -2,2c-1.10547,0 -2,-0.89453 -2,-2c0,-1.10547 0.89453,-2 2,-2zM12,28h3v3h3v3h-3v3h-3v-3h-3v-3h3zM33,31c1.10547,0 2,0.89453 2,2c0,1.10547 -0.89453,2 -2,2c-1.10547,0 -2,-0.89453 -2,-2c0,-1.10547 0.89453,-2 2,-2zM41,31c1.10547,0 2,0.89453 2,2c0,1.10547 -0.89453,2 -2,2c-1.10547,0 -2,-0.89453 -2,-2c0,-1.10547 0.89453,-2 2,-2zM37,35c1.10547,0 2,0.89453 2,2c0,1.10547 -0.89453,2 -2,2c-1.10547,0 -2,-0.89453 -2,-2c0,-1.10547 0.89453,-2 2,-2z"></path></g></g></svg>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-3 col-sm-6">
-              <div class="card">
-                <div class="card-body p-3">
-                  <div class="row">
-                    <div class="col-8">
-                      <div class="numbers">
-                        <p class="text-lg mb-0 text-capitalize font-weight-bold">Comptes</p>
-                        <h5 class="font-weight-bolder mb-0">
-                          3
-                          <span class="text-success text-sm font-weight-bolder"></span>
-                        </h5>
-                      </div>
-                    </div>
-                    <div class="col-4 text-end">
-                      <div class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
-                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-width="35" height="35"
-viewBox="0 0 172 172"
-style=" fill:#000000;"><g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(3.44,3.44)"><path d="M25.875,3.40625c-3.67969,0.06641 -6.36719,1.16406 -8,3.3125c-1.93359,2.54688 -2.28516,6.42578 -1.0625,11.5c-0.44922,0.55078 -0.78906,1.38672 -0.65625,2.5c0.26172,2.19531 1.14063,3.10547 1.84375,3.46875c0.33984,1.73438 1.29688,3.67578 2.21875,4.59375v0.46875c0.00391,0.66016 -0.00781,1.28516 -0.03125,1.9375c0.52344,1.09375 2.18359,2.8125 5.8125,2.8125c3.65625,0 5.35938,-1.75391 5.84375,-2.96875c-0.01953,-0.60156 -0.00391,-1.17187 0,-1.78125v-0.46875c0.89453,-0.91406 1.81641,-2.85937 2.15625,-4.59375c0.72266,-0.35937 1.57813,-1.26562 1.84375,-3.46875c0.13281,-1.08984 -0.1875,-1.91797 -0.625,-2.46875c0.58203,-1.98047 1.76953,-7.13672 -0.28125,-10.4375c-0.85937,-1.38281 -2.16016,-2.25391 -3.875,-2.59375c-0.94531,-1.19141 -2.75781,-1.8125 -5.1875,-1.8125zM32.75,33.34375c-1.26172,1.45703 -3.49219,2.65625 -6.75,2.65625c-3.31641,0 -5.48437,-1.21875 -6.71875,-2.625c-0.95312,0.80078 -2.47656,1.40234 -4.15625,2.0625c-3.90625,1.53516 -8.76172,3.43359 -9.125,9.5l-0.0625,1.0625h40.125l-0.0625,-1.0625c-0.36328,-6.06641 -5.19922,-7.96484 -9.09375,-9.5c-1.6875,-0.66797 -3.20703,-1.28125 -4.15625,-2.09375z"></path></g></g></svg>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row mt-4">
-            <div class="col-lg-7 mb-lg-0 mb-4">
-              <div class="card">
-                <div class="card-body p-3">
-                  <div class="row">
-                    <div class="col-lg-6">
-                      <div class="d-flex flex-column h-100">
-                        <p class="mb-1 pt-2 text-bold">Jeux vidéos </p>
-                        <h4 class="font-weight-bolder">Derniers jeux ajoutés</h4>
-                        <p class="mb-5">Découvrez les derniers jeux ajoutés à la plateforme.</p>
-                        <a class="text-body text-xl font-weight-bold mb-0 icon-move-right mt-auto" href="jeux/pickJeux">
+    <body>
+        <% include ./partials/header %>
+            <% include ./partials/nav %>
+                <main role="main">
+                    <section class="panel important">
+                        <h2>Bienvenue sur Publikeco</h2>
+                    </section><br>
+                    <main class="main-content position-relative max-height-vh-100 h-100 mt-1 border-radius-lg ">
+                        <div class="container-fluid py-4">
+                            <div class="row" id="rowBug">
+                                <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
+                                    <div class="card">
+                                        <div class="card-body p-3">
+                                            <div class="row">
+                                                <div class="col-8">
+                                                    <div class="numbers">
+                                                        <p id="cssSize" class="text-lg mb-0 text-capitalize font-weight-bold">Enchères</p>
+                                                        <h5 id="cssSize" class="font-weight-bolder mb-0">
+                                                            18
+                                                            <span class="text-success text-sm font-weight-bolder"></span>
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4 text-end">
+                                                    <div class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="35" height="35" viewBox="0 0 172 172" style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M91.62136,11.41068c-1.48951,0.04438 -2.90324,0.6669 -3.94167,1.73568l-34.4,34.4c-1.49776,1.43802 -2.10108,3.57339 -1.5773,5.58258c0.52378,2.00919 2.09283,3.57823 4.10201,4.10201c2.00919,0.52378 4.14456,-0.07954 5.58258,-1.5773l34.4,-34.4c1.69569,-1.64828 2.20555,-4.16851 1.28389,-6.3463c-0.92166,-2.17779 -3.08576,-3.56638 -5.44951,-3.49667zM103.2,28.66667c-1.53699,0.00016 -3.00955,0.61742 -4.08724,1.71328l-28.43151,28.45391c-1.1945,1.08355 -1.8774,2.62008 -1.88125,4.23281c-0.00177,1.69226 0.74415,3.29887 2.03802,4.38958l33.99687,34.01927c1.07855,1.10275 2.55594,1.72438 4.09844,1.72448c1.52598,-0.00022 2.98891,-0.60877 4.06484,-1.69089l28.59948,-28.59948c1.10964,-1.07938 1.73565,-2.56161 1.73567,-4.10964c-0.00016,-1.53699 -0.61742,-3.00955 -1.71328,-4.08724l-34.31042,-34.31041c-0.02221,-0.02258 -0.04461,-0.04498 -0.06719,-0.06719c-1.07411,-1.06842 -2.52744,-1.66827 -4.04245,-1.66849zM154.68802,74.47734c-1.48951,0.04438 -2.90324,0.66691 -3.94167,1.73568l-34.4,34.4c-1.49778,1.43802 -2.10113,3.5734 -1.57735,5.5826c0.52378,2.0092 2.09284,3.57826 4.10204,4.10204c2.0092,0.52378 4.14458,-0.07957 5.5826,-1.57735l34.4,-34.4c1.69569,-1.64828 2.20555,-4.16851 1.28389,-6.3463c-0.92166,-2.17779 -3.08576,-3.56638 -5.44952,-3.49667zM76.21302,87.67969l-54.58985,46.61692c-2.78774,2.17004 -4.41957,5.50394 -4.42318,9.03672c0,6.33287 5.1338,11.46667 11.46667,11.46667c3.46111,-0.00048 6.73683,-1.56426 8.91354,-4.25521c0.01875,-0.02232 0.03741,-0.04472 0.05599,-0.06718l0.0112,-0.0112l46.67292,-54.67943z"></path></g></g></svg>                                                        </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
+                                    <div class="card">
+                                        <div class="card-body p-3">
+                                            <div class="row">
+                                                <div class="col-8">
+                                                    <div class="numbers">
+                                                        <p class="text-lg mb-0 text-capitalize font-weight-bold">Annonces</p>
+                                                        <h5 class="font-weight-bolder mb-0">
+                                                            4
+                                                            <span class="text-success text-sm font-weight-bolder"></span>
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4 text-end">
+                                                    <div class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="35" height="35" viewBox="0 0 172 172" style=" fill:#000000;"><g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(0.33594,0.33594)"><path d="M59.44727,59c-20.648,0 -37.44727,17.04297 -37.44727,38.54297v316.91406c0,21.5 16.79927,38.54297 37.44727,38.54297h393.10156c20.652,0 37.45117,-17.04297 37.45117,-38.54297v-252.10742v-0.07617v-0.07813v-64.65234c0,-21.5 -16.79917,-38.54297 -37.45117,-38.54297zM59.44727,71h393.10156c14.032,0 25.45117,11.66097 25.45117,26.54297v58.45703h-444v-58.45703c0,-14.882 11.41527,-26.54297 25.44727,-26.54297zM75.17188,86.04492c-14.866,0 -26.9668,12.55419 -26.9668,27.99219c0,15.438 12.0948,27.99414 26.9668,27.99414c14.869,0 26.9668,-12.55814 26.9668,-27.99414c0,-15.436 -12.1008,-27.99219 -26.9668,-27.99219zM143.31055,86.04492c-14.866,0 -26.9668,12.55419 -26.9668,27.99219c0,15.438 12.0978,27.99414 26.9668,27.99414c14.869,0 26.96484,-12.55814 26.96484,-27.99414c0,-15.436 -12.09884,-27.99219 -26.96484,-27.99219zM211.44727,86.04492c-14.866,0 -26.96485,12.55419 -26.96485,27.99219c0,15.438 12.09585,27.99414 26.96485,27.99414c14.869,0 26.96679,-12.55814 26.96679,-27.99414c0,-15.436 -12.10079,-27.99219 -26.96679,-27.99219zM75.17188,98.04492c8.252,0 14.9668,7.17319 14.9668,15.99219c0,8.819 -6.7148,15.99414 -14.9668,15.99414c-8.252,0 -14.9668,-7.17514 -14.9668,-15.99414c0,-8.819 6.7148,-15.99219 14.9668,-15.99219zM143.31055,98.04492c8.252,0 14.96484,7.17319 14.96484,15.99219c0,8.819 -6.71284,15.99414 -14.96484,15.99414c-8.252,0 -14.9668,-7.17514 -14.9668,-15.99414c0,-8.819 6.7148,-15.99219 14.9668,-15.99219zM211.44727,98.04492c8.252,0 14.96679,7.17319 14.96679,15.99219c0,8.819 -6.71479,15.99414 -14.96679,15.99414c-8.252,0 -14.96485,-7.17514 -14.96485,-15.99414c0,-8.819 6.71685,-15.99219 14.96485,-15.99219zM34,168h444v246.45703c0,14.882 -11.41917,26.54297 -25.45117,26.54297h-393.10156c-14.032,0 -25.44727,-11.66097 -25.44727,-26.54297zM283.95117,208.18164c-0.77107,-0.02101 -1.53933,0.10151 -2.26562,0.36133l-112.39649,39.45703h-57.32226c-4.00656,-0.01688 -7.85123,1.57987 -10.66699,4.43018c-2.81577,2.85031 -4.36553,6.71416 -4.29981,10.72021v56.36523c0,6.80001 4,12.57555 10,14.56055v57.79492c0.12104,3.39181 2.88555,6.09011 6.2793,6.12891h32.30859c2.65542,0.01196 5.00022,-1.72973 5.75586,-4.27539l17.33398,-58.72461h0.61133l112.28516,39.28906c0.64082,0.20894 1.31251,0.30735 1.98633,0.29102c1.31426,-0.00614 2.59781,-0.398 3.6914,-1.12696c1.64371,-1.11112 2.66327,-2.93575 2.74805,-4.91796v-42.09961l20.30078,-2.24805c12.43897,-1.37463 21.81652,-11.94483 21.69922,-24.45898v-19.2754c0.11381,-12.51174 -9.26273,-23.07827 -21.69922,-24.45312l-20.30078,-2.25195v-39.61914c-0.1435,-3.26245 -2.78442,-5.85903 -6.04883,-5.94727zM278,222.58984v137.48243l-102,-35.50977v-66.46289zM391.32617,241.99414c-0.49962,0.00256 -0.99696,0.06752 -1.48047,0.19336l-39,10c-2.92852,0.74982 -4.84186,3.56119 -4.46495,6.56059c0.37691,2.99939 2.92635,5.24997 5.94933,5.25191c0.50402,-0.00026 1.00601,-0.06391 1.49414,-0.18945l39,-10c2.93888,-0.74409 4.86098,-3.56355 4.47969,-6.57109c-0.38129,-3.00754 -2.94615,-5.25815 -5.97774,-5.24532zM111.9668,260h52.0332v63h-52.0332c-1.82,0 -2.9668,-1.66438 -2.9668,-3.48438v-56.36523c-0.06937,-0.82272 0.21438,-1.63614 0.78042,-2.23721c0.56604,-0.60107 1.36097,-0.93309 2.18638,-0.91318zM290,265.82031l18.99219,2.10547c6.34862,0.71643 11.11372,6.13931 11.00781,12.52734v19.2754c0.10975,6.38982 -4.65704,11.81547 -11.00781,12.52929l-18.99219,2.10352zM356,286c-3.31371,0 -6,2.68629 -6,6c0,3.31371 2.68629,6 6,6h53c3.31371,0 6,-2.68629 6,-6c0,-3.31371 -2.68629,-6 -6,-6zM352.64062,320.01172c-3.0715,-0.14763 -5.75743,2.05076 -6.21983,5.09085c-0.4624,3.04009 1.44842,5.93765 4.42491,6.70993l39,10c3.21016,0.8225 6.47926,-1.11308 7.30176,-4.32324c0.8225,-3.21016 -1.11308,-6.47926 -4.32324,-7.30176l-39,-10c-0.38769,-0.09789 -0.7842,-0.15677 -1.1836,-0.17578zM119,335h37.16602l-15.06641,51h-22.09961z"></path></g></g></svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
+                                    <div class="card">
+                                        <div class="card-body p-3">
+                                            <div class="row">
+                                                <div class="col-8">
+                                                    <div class="numbers">
+                                                        <p class="text-lg mb-0 text-capitalize font-weight-bold">Jeux</p>
+                                                        <h5 class="font-weight-bolder mb-0">
+                                                            5
+                                                            <span class="text-danger text-sm font-weight-bolder"></span>
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4 text-end">
+                                                    <div class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="35" height="35" viewBox="0 0 172 172" style=" fill:#000000;"><g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(3.44,3.44)"><path d="M43.90625,0.96875c-0.04297,0.00781 -0.08594,0.01953 -0.125,0.03125c-0.46484,0.10547 -0.79297,0.52344 -0.78125,1c0,1.89844 -0.87891,2.94141 -2.5,3.96875c-1.62109,1.02734 -3.96484,1.85938 -6.375,2.875c-2.41016,1.01563 -4.90625,2.23828 -6.84375,4.28125c-1.76172,1.85938 -2.98437,4.41406 -3.1875,7.84375c-1.80078,-0.14844 -2.92187,-0.72656 -4.125,-1.34375c-1.46875,-0.75391 -3.14844,-1.625 -5.96875,-1.625c-6.01953,0 -14,13.68359 -14,24c0,4.71094 2.46875,8 6,8c5.30469,0 8.90625,-2.87891 12.09375,-5.40625c2.4375,-1.93359 4.55859,-3.59375 6.90625,-3.59375c2.34766,0 4.46875,1.66016 6.90625,3.59375c3.1875,2.52734 6.78906,5.40625 12.09375,5.40625c3.53125,0 6,-3.28906 6,-8c0,-10.31641 -7.98047,-24 -14,-24c-2.82031,0 -4.5,0.87109 -5.96875,1.625c-1.15234,0.59375 -2.23437,1.13672 -3.90625,1.3125c0.19531,-2.94141 1.17578,-4.91016 2.625,-6.4375c1.61719,-1.70703 3.82813,-2.85937 6.15625,-3.84375c2.32813,-0.98437 4.72266,-1.77734 6.65625,-3c1.93359,-1.22266 3.4375,-3.05469 3.4375,-5.65625c0.01172,-0.28906 -0.10547,-0.56641 -0.3125,-0.76172c-0.21094,-0.19922 -0.49609,-0.29687 -0.78125,-0.26953zM37,27c1.10547,0 2,0.89453 2,2c0,1.10547 -0.89453,2 -2,2c-1.10547,0 -2,-0.89453 -2,-2c0,-1.10547 0.89453,-2 2,-2zM12,28h3v3h3v3h-3v3h-3v-3h-3v-3h3zM33,31c1.10547,0 2,0.89453 2,2c0,1.10547 -0.89453,2 -2,2c-1.10547,0 -2,-0.89453 -2,-2c0,-1.10547 0.89453,-2 2,-2zM41,31c1.10547,0 2,0.89453 2,2c0,1.10547 -0.89453,2 -2,2c-1.10547,0 -2,-0.89453 -2,-2c0,-1.10547 0.89453,-2 2,-2zM37,35c1.10547,0 2,0.89453 2,2c0,1.10547 -0.89453,2 -2,2c-1.10547,0 -2,-0.89453 -2,-2c0,-1.10547 0.89453,-2 2,-2z"></path></g></g></svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-sm-6">
+                                    <div class="card">
+                                        <div class="card-body p-3">
+                                            <div class="row">
+                                                <div class="col-8">
+                                                    <div class="numbers">
+                                                        <p class="text-lg mb-0 text-capitalize font-weight-bold">Comptes</p>
+                                                        <h5 class="font-weight-bolder mb-0">
+                                                            3
+                                                            <span class="text-success text-sm font-weight-bolder"></span>
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4 text-end">
+                                                    <div class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="35" height="35" viewBox="0 0 172 172" style=" fill:#000000;"><g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(3.44,3.44)"><path d="M25.875,3.40625c-3.67969,0.06641 -6.36719,1.16406 -8,3.3125c-1.93359,2.54688 -2.28516,6.42578 -1.0625,11.5c-0.44922,0.55078 -0.78906,1.38672 -0.65625,2.5c0.26172,2.19531 1.14063,3.10547 1.84375,3.46875c0.33984,1.73438 1.29688,3.67578 2.21875,4.59375v0.46875c0.00391,0.66016 -0.00781,1.28516 -0.03125,1.9375c0.52344,1.09375 2.18359,2.8125 5.8125,2.8125c3.65625,0 5.35938,-1.75391 5.84375,-2.96875c-0.01953,-0.60156 -0.00391,-1.17187 0,-1.78125v-0.46875c0.89453,-0.91406 1.81641,-2.85937 2.15625,-4.59375c0.72266,-0.35937 1.57813,-1.26562 1.84375,-3.46875c0.13281,-1.08984 -0.1875,-1.91797 -0.625,-2.46875c0.58203,-1.98047 1.76953,-7.13672 -0.28125,-10.4375c-0.85937,-1.38281 -2.16016,-2.25391 -3.875,-2.59375c-0.94531,-1.19141 -2.75781,-1.8125 -5.1875,-1.8125zM32.75,33.34375c-1.26172,1.45703 -3.49219,2.65625 -6.75,2.65625c-3.31641,0 -5.48437,-1.21875 -6.71875,-2.625c-0.95312,0.80078 -2.47656,1.40234 -4.15625,2.0625c-3.90625,1.53516 -8.76172,3.43359 -9.125,9.5l-0.0625,1.0625h40.125l-0.0625,-1.0625c-0.36328,-6.06641 -5.19922,-7.96484 -9.09375,-9.5c-1.6875,-0.66797 -3.20703,-1.28125 -4.15625,-2.09375z"></path></g></g></svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-lg-7 mb-lg-0 mb-4">
+                                    <div class="card">
+                                        <div class="card-body p-3">
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <div class="d-flex flex-column h-100">
+                                                        <p class="mb-1 pt-2 text-bold">Jeux vidéos </p>
+                                                        <h4 class="font-weight-bolder">Derniers jeux ajoutés</h4>
+                                                        <p class="mb-5">Découvrez les derniers jeux ajoutés à la plateforme.</p>
+                                                        <a class="text-body text-xl font-weight-bold mb-0 icon-move-right mt-auto" href="jeux/pickJeux">
                           Y accéder !
                           <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                           width="25" height="25"
                           viewBox="0 0 172 172"
                           style=" fill:#000000;"><g fill="#b4acc3" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(3.44,3.44)"><path d="M25,2c-12.68359,0 -23,10.31641 -23,23c0,12.68359 10.31641,23 23,23c12.68359,0 23,-10.31641 23,-23c0,-12.68359 -10.31641,-23 -23,-23zM18,18.3125c4.5,0 5.3125,3.67578 5.3125,4.375h-2.125c-0.10156,-0.39844 -0.48828,-2.5 -3.1875,-2.5c-3.60156,0 -3.8125,4.30469 -3.8125,4.90625c0,3.5 1.91406,4.90625 3.8125,4.90625c2.5,0 3.5,-1.60156 3.5,-3.5h-3.3125v-1.6875h5.3125v6.59375h-1.40625l-0.28125,-1.5c-0.60156,0.69922 -1.71094,1.78125 -3.8125,1.78125c-4.39844,0 -6,-3.88672 -6,-6.6875c0,-2 1,-6.6875 6,-6.6875zM32,18.3125c3.60156,0 6,2.88672 6,6.6875c0,3.39844 -2,6.6875 -6,6.6875c-4.89844,0 -6,-4.48828 -6,-6.6875c0,-4.80078 3.30078,-6.6875 6,-6.6875zM32,20.09375c-3.60156,0 -3.8125,4.30469 -3.8125,4.90625c0,1.5 0.51172,4.90625 3.8125,4.90625c2,0 3.8125,-1.60547 3.8125,-4.90625c0,-0.60156 -0.11328,-4.90625 -3.8125,-4.90625z"></path></g></g></svg>
                         </a>
-                      </div>
-                    </div>
-                    <div class="col-lg-5 ms-auto text-center mt-5 mt-lg-0">
-                      <div class="bg-gradient-primary border-radius-lg h-100">
-                        <div class="position-relative d-flex align-items-center justify-content-center h-100">
-                        <a href="jeux/pickJeux">  <img class="w-100 position-relative z-index-2 img11" src="/public/img/games2.jpg" alt="rocket"></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-5">
-              <div class="card h-100 p-3">
-                <div class="overflow-hidden position-relative border-radius-lg bg-cover h-100" style="background-image: url('../assets/img/ivancik.jpg');">
-                  <span class="mask bg-gradient-dark"></span>
-                  <div class="card-body position-relative z-index-1 d-flex flex-column h-100 p-3">
-                    <h4 class="text-white font-weight-bolder mb-4 pt-2">Ajoutez votre annonce !</h4>
-                    <p class="text-white">Creez votre propre annonce et partagez la sur la plateforme.</p>
-                    <a class="text-white text-xl font-weight-bold mb-0 icon-move-right mt-auto" href="annonce/addAnnonce">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-5 ms-auto text-center mt-5 mt-lg-0">
+                                                    <div class="bg-gradient-primary border-radius-lg h-100">
+                                                        <div class="position-relative d-flex align-items-center justify-content-center h-100">
+                                                            <a href="jeux/pickJeux"> <img class="w-100 position-relative z-index-2 img11" src="/public/img/games2.jpg" alt="rocket"></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5">
+                                    <div class="card h-100 p-3">
+                                        <div class="overflow-hidden position-relative border-radius-lg bg-cover h-100" style="background-image: url('../assets/img/ivancik.jpg');">
+                                            <span class="mask bg-gradient-dark"></span>
+                                            <div class="card-body position-relative z-index-1 d-flex flex-column h-100 p-3">
+                                                <h4 class="text-white font-weight-bolder mb-4 pt-2">Ajoutez votre annonce !</h4>
+                                                <p class="text-white">Creez votre propre annonce et partagez la sur la plateforme.</p>
+                                                <a class="text-white text-xl font-weight-bold mb-0 icon-move-right mt-auto" href="annonce/addAnnonce">
                       Y accéder !
                       <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
   width="25" height="25"
   viewBox="0 0 172 172"
   style=" fill:#000000;"><g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(3.44,3.44)"><path d="M25,2c-12.69141,0 -23,10.30859 -23,23c0,12.69141 10.30859,23 23,23c12.69141,0 23,-10.30859 23,-23c0,-12.69141 -10.30859,-23 -23,-23zM25,4c11.60938,0 21,9.39063 21,21c0,11.60938 -9.39062,21 -21,21c-11.60937,0 -21,-9.39062 -21,-21c0,-11.60937 9.39063,-21 21,-21zM18,18.3125c-5,0 -6,4.6875 -6,6.6875c0,2.80078 1.60156,6.6875 6,6.6875c2.10156,0 3.21094,-1.08203 3.8125,-1.78125l0.28125,1.5h1.40625v-6.59375h-5.3125v1.6875h3.3125c0,1.89844 -1,3.5 -3.5,3.5c-1.89844,0 -3.8125,-1.40625 -3.8125,-4.90625c0,-0.60156 0.21094,-4.90625 3.8125,-4.90625c2.69922,0 3.08594,2.10156 3.1875,2.5h2.125c0,-0.69922 -0.8125,-4.375 -5.3125,-4.375zM32,18.3125c-2.69922,0 -6,1.88672 -6,6.6875c0,2.19922 1.10156,6.6875 6,6.6875c4,0 6,-3.28906 6,-6.6875c0,-3.80078 -2.39844,-6.6875 -6,-6.6875zM32,20.09375c3.69922,0 3.8125,4.30469 3.8125,4.90625c0,3.30078 -1.8125,4.90625 -3.8125,4.90625c-3.30078,0 -3.8125,-3.40625 -3.8125,-4.90625c0,-0.60156 0.21094,-4.90625 3.8125,-4.90625z"></path></g></g></svg>
                     </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </main>
-    </main>
-  </body>
-</html>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </main>
+                </main>
+    </body>
+
+    </html>
